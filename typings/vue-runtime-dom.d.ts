@@ -642,6 +642,7 @@ export interface TableHTMLAttributes extends HTMLAttributes {
   cellpadding?: Numberish
   cellspacing?: Numberish
   summary?: string
+  border?: boolean
 }
 
 export interface TextareaHTMLAttributes extends HTMLAttributes {
