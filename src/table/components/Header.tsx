@@ -56,7 +56,7 @@ function getColumnHTML(column: Column, slots: Slots, sortCallback: (field: strin
     sortCallback(column.key, column.sortDirection!);
   }
 
-  return <th onClick={onClick}>{header}{sort}</th>
+  return <th class="c-table-header__item" onClick={onClick}>{header}{sort}</th>
 }
 
 export const CTableHeader = defineComponent({
@@ -73,6 +73,6 @@ export const CTableHeader = defineComponent({
       }
     },
     render() {
-      return <tr>{this.columns.map(this.renderColumnHTML)}</tr>
+      return <tr class="c-table-header">{this.columns.map(this.renderColumnHTML)}</tr>
     }
 });

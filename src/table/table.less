@@ -23,11 +23,11 @@
   }
 }
 
-.pager {
+.c-pager {
   display: flex;
   margin-top: 4px;
 
-  .pager-no {
+  &__item {
     padding: 4px 8px;
     border: 1px solid #e2e2e2;
     margin-right: 4px;
@@ -35,6 +35,11 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    &&--current {
+        background-color: #333;
+        color: #eee;
     }
   }
 }

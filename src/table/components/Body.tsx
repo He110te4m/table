@@ -14,7 +14,7 @@ function getRowHTML(column: Column, slots: Slots, data: Record<string, any>) {
     : slots[column.key]
       ? slots[column.key]?.(params) ?? val
       :val;
-  return <td>{content}</td>
+  return <td class="c-table-body__row__cell">{content}</td>
 }
 
 export const CTableBody = defineComponent({
@@ -28,6 +28,6 @@ export const CTableBody = defineComponent({
       };
     },
     render() {
-      return <tbody>{this.list.map(data => <tr>{this.columns.map(column => getRowHTML(column, this.slots, data))}</tr>) ?? []}</tbody>;
+      return <tbody class="c-table-body">{this.list.map(data => <tr class="c-table-body__row">{this.columns.map(column => getRowHTML(column, this.slots, data))}</tr>) ?? []}</tbody>;
     }
 });

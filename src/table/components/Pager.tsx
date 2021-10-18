@@ -2,15 +2,19 @@ import { computed, defineComponent, ref } from '@vue/composition-api';
 import { pagerProps } from '../types';
 
 function renderPage(pageList: number[], curPage: number, jumpFn: (page: number) => void) {
-  return pageList.map(page => (
-    <dd class="pager-no">
-      {
-        page === curPage
-          ? <span class="pager-cur">{page}</span>
-          : <a onClick={() => jumpFn(page)}>{page}</a>
-      }
-    </dd>
-  ));
+  return pageList.map(page => {
+    const isCurPage = page === curPage;
+    const cls = [ 'c-pager__item', isCurPage ? 'c-pager__item--current' : '' ].join(' ');
+    return (
+      <dd class={cls}>
+        {
+          isCurPage
+            ? <span class="c-pager__item__no">{page}</span>
+            : <a class="c-pager__item__no" onClick={() => jumpFn(page)}>{page}</a>
+        }
+      </dd>
+    );
+  });
 }
 
 export const CPager = defineComponent({
@@ -33,6 +37,6 @@ export const CPager = defineComponent({
     };
   },
   render() {
-    return <dl class="pager">{renderPage(this.pageList, this.curPage, this.onPageChange)}</dl>;
+    return <dl class="c-pager">{renderPage(this.pageList, this.curPage, this.onPageChange)}</dl>;
   }
 });

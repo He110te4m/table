@@ -1,1 +1,1 @@
-export const TABLE_TOKEN = Symbol("CTable");
+export const TABLE_TOKEN = Symbol('CTable');
