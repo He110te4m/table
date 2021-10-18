@@ -11,7 +11,7 @@ function getTitle(column: Column, slots: Slots) {
     ? slots[titleSlot]?.() ?? val
     : val;
 
-  return <span>{header}</span>;
+  return <span class="c-table-header__item__text">{header}</span>;
 }
 
 function getSort({ sortable, sortDirection }: Column) {
@@ -22,7 +22,7 @@ function getSort({ sortable, sortDirection }: Column) {
       : `${sortArrowCls} desc`
     : '';
 
-  return isShowArrow ? <span class={sortCls}></span> : '';
+  return isShowArrow ? <span class={`${sortCls} c-table-header__item__icon`}></span> : '';
 }
 
 function getNextSortStatus(dir: SortDirection) {

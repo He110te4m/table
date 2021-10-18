@@ -1,4 +1,4 @@
-import { computed, defineComponent, ref } from '@vue/composition-api';
+import { computed, defineComponent, ref, toRefs } from '@vue/composition-api';
 import { pagerProps } from '../types';
 
 function renderPage(pageList: number[], curPage: number, jumpFn: (page: number) => void) {
@@ -23,9 +23,10 @@ export const CPager = defineComponent({
   emits: [
     'jump'
   ],
-  setup({ total, limit, page }, { emit }) {
-    const pageCount = computed(() => Math.ceil(total / limit));
-    const curPage = ref((page > 0 && page <= pageCount.value) ? Math.floor(page) : 1);
+  setup(props, { emit }) {
+    const { total, limit, page } = toRefs(props);
+    const pageCount = computed(() => Math.ceil(total.value / limit.value));
+    const curPage = ref((page.value > 0 && page.value <= pageCount.value) ? Math.floor(page.value) : 1);
     const pageList = computed(() => Array.from({ length: pageCount.value }, (_, idx) => idx + 1));
     return {
       curPage,

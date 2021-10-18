@@ -2,7 +2,7 @@
  * Created by uedc on 2021/10/11.
  */
 
-import { computed, defineComponent, provide, ref } from '@vue/composition-api'
+import { computed, defineComponent, provide, reactive, ref } from '@vue/composition-api'
 import { pagerProps, SortDirection, tableProps } from './types'
 import { TABLE_TOKEN } from './const';
 import { CTableHeader } from './components/Header';
@@ -19,10 +19,11 @@ export default defineComponent({
     });
 
     const curPage = ref(1);
+    const sortField = ref(props.columns.find(/* istanbul ignore next */ col => !!col.sortable && col.sortDirection !== SortDirection.none)?.key ?? '');
 
     return {
       curPage,
-      sortField: ''
+      sortField
     }
   },
 
@@ -53,14 +54,14 @@ export default defineComponent({
     const body = <CTableBody columns={columns} list={curPageDataList.value} />;
 
     // 渲染翻页器
-    const options = { ...pagerOptions, total: pagerOptions?.total ?? list.length };
+    const options = reactive({ ...pagerOptions, total: pagerOptions?.total ?? list.length });
     const pager = pagerOptions ? <CPager {...{ attrs: options }} page={curPage} onJump={(page: number) => {
       this.curPage = page;
     }} /> : '';
 
     return (
       <div class="c-table">
-        <table border={border ?? true} style={`width: ${defaultWidth}; height: ${defaultHeight}`}>
+        <table border={border} style={`width: ${defaultWidth}; height: ${defaultHeight}`}>
           {header}{body}
         </table>
         {pager}
