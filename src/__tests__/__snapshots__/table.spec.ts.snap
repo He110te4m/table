@@ -1,0 +1,296 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table cell slot 1`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">
+          <div></div>
+        </td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">
+          <div></div>
+        </td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+    </tbody>
+  </table>
+</div>"
+`;
+
+exports[`Table custom cell slot name 1`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">
+          <div></div>
+        </td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">
+          <div></div>
+        </td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+    </tbody>
+  </table>
+</div>"
+`;
+
+exports[`Table data missing 1`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">
+          <div></div>
+        </td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">
+          <div></div>
+        </td>
+        <td class=\\"c-table-body__row__cell\\"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>"
+`;
+
+exports[`Table default sort 1`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">张三</td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">李四</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+    </tbody>
+  </table>
+</div>"
+`;
+
+exports[`Table default sort 2`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow desc c-table-header__item__icon\\"></span></th>"`;
+
+exports[`Table default sort 3`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>"`;
+
+exports[`Table default sort 4`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>"`;
+
+exports[`Table loadData 1`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">张三</td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">李四</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+    </tbody>
+  </table>
+</div>"
+`;
+
+exports[`Table loadData 2`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">张三</td>
+        <td class=\\"c-table-body__row__cell\\">18</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">李四</td>
+        <td class=\\"c-table-body__row__cell\\">20</td>
+      </tr>
+    </tbody>
+  </table>
+</div>"
+`;
+
+exports[`Table render 1`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\"></tr>
+    <tbody class=\\"c-table-body\\"></tbody>
+  </table>
+</div>"
+`;
+
+exports[`Table showPager 1`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">张三</td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">李四</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+    </tbody>
+  </table>
+  <dl class=\\"c-pager\\">
+    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
+  </dl>
+</div>"
+`;
+
+exports[`Table showPager 2`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">张三</td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">李四</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+    </tbody>
+  </table>
+  <dl class=\\"c-pager\\">
+    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">2</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">3</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">4</a></dd>
+  </dl>
+</div>"
+`;
+
+exports[`Table showPager 3`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\"></tbody>
+  </table>
+  <dl class=\\"c-pager\\">
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">1</a></dd>
+    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">2</span></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">3</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">4</a></dd>
+  </dl>
+</div>"
+`;
+
+exports[`Table sort 1`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">张三</td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">李四</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+    </tbody>
+  </table>
+</div>"
+`;
+
+exports[`Table sort 2`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>"`;
+
+exports[`Table sort 3`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow desc c-table-header__item__icon\\"></span></th>"`;
+
+exports[`Table sort 4`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>"`;
+
+exports[`Table sort 5`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>"`;
+
+exports[`Table sort not sortable column 1`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">张三</td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">李四</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+    </tbody>
+  </table>
+</div>"
+`;
+
+exports[`Table sort not sortable column 2`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>"`;
+
+exports[`Table title slot 1`] = `
+"<div class=\\"c-table\\">
+  <table border=\\"true\\" style=\\"width: auto; height: auto;\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">nameSlot</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
+      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">张三</td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">李四</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+    </tbody>
+  </table>
+</div>"
+`;

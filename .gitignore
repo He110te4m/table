@@ -4,8 +4,3 @@ node_modules
 .history
 .vscode/
 TODO
-
-# unit test
-coverage/
-junit.xml
-**/__snapshots__/
