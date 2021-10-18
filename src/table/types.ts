@@ -72,7 +72,6 @@ export const tableProps = {
   /** 分页配置 */
   pagerOptions: {
     type: Object as () => PagerPublicProps,
-    default: () => ({}),
   },
 };
 

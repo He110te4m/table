@@ -25,7 +25,6 @@ export const CTableBody = defineComponent({
 
       return {
         slots
-        // renderRowHTML: (column: Column, data: ValueOf<typeof list>) => getRowHTML(column, slots, data)
       };
     },
     render() {

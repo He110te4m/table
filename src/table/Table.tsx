@@ -6,7 +6,7 @@ import { computed, defineComponent, provide, ref } from '@vue/composition-api'
 import { pagerProps, SortDirection, tableProps } from './types'
 import { TABLE_TOKEN } from './const';
 import { CTableHeader } from './components/Header';
-import { CTableBody } from './components/Row';
+import { CTableBody } from './components/Body';
 import { CPager } from './components/Pager';
 import './table.less';
 
@@ -28,8 +28,8 @@ export default defineComponent({
 
   render() {
     // 渲染表格头
-    const { columns, list, pagerOptions = {}, border, defaultWidth, defaultHeight, curPage, sortField } = this;
-    const { limit = pagerProps.limit.default } = pagerOptions;
+    const { columns, list, pagerOptions, border, defaultWidth, defaultHeight, curPage, sortField } = this;
+    const { limit = pagerProps.limit.default } = pagerOptions ?? {};
     const onSort = (field: string) => {
       this.sortField = field;
     }
@@ -53,9 +53,10 @@ export default defineComponent({
     const body = <CTableBody columns={columns} list={curPageDataList.value} />;
 
     // 渲染翻页器
-    const pager = <CPager {...{ attrs: pagerOptions }} page={curPage} onJump={(page: number) => {
+    const options = { ...pagerOptions, total: pagerOptions?.total ?? list.length };
+    const pager = pagerOptions ? <CPager {...{ attrs: options }} page={curPage} onJump={(page: number) => {
       this.curPage = page;
-    }} />
+    }} /> : '';
 
     return (
       <div class="c-table">

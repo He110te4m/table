@@ -2,7 +2,15 @@ import { computed, defineComponent, ref } from '@vue/composition-api';
 import { pagerProps } from '../types';
 
 function renderPage(pageList: number[], curPage: number, jumpFn: (page: number) => void) {
-  return pageList.map(page => page === curPage ? <span class="pager-cur">{page}</span> : <a onClick={() => jumpFn(page)}>{page}</a>);
+  return pageList.map(page => (
+    <dd class="pager-no">
+      {
+        page === curPage
+          ? <span class="pager-cur">{page}</span>
+          : <a onClick={() => jumpFn(page)}>{page}</a>
+      }
+    </dd>
+  ));
 }
 
 export const CPager = defineComponent({

@@ -5,3 +5,7 @@ node_modules
 .vscode/
 TODO
 
+# unit test
+coverage/
+junit.xml
+**/__snapshots__/
