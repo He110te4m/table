@@ -39,4 +39,12 @@ declare global {
       : TVal extends object
         ? TVal[keyof TVal]
         : TVal;
+
+  interface ImportMetaEnv {
+    readonly DEV: boolean;
+  }
+
+  interface ImportMeta {
+    readonly env: ImportMetaEnv;
+  }
 }
