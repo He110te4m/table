@@ -1,5 +1,5 @@
 import { defineComponent, inject } from "@vue/composition-api";
-import { TABLE_TOKEN } from "../const";
+import { TABLE_TOKEN } from "../common/const";
 import { Column, pick, Slots, tableProps } from "../types";
 
 function getRowHTML(column: Column, slots: Slots, data: Record<string, any>) {

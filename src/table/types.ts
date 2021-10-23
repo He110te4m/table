@@ -27,10 +27,15 @@ export type Column = {
   slot?: string;
   /** 标题插槽名，默认不使用插槽 */
   titleSlot?: string;
+  /** 是否可排序 */
   sortable?: boolean;
+  /** 当前的排序方向 */
   sortDirection?: SortDirection;
+  /** 当前列宽 */
+  width?: CSSLength;
 };
 
+/** 提取部分 prop */
 export function pick<TData extends object, TKey extends keyof TData>(
   data: TData,
   keys: TKey[]
@@ -43,11 +48,12 @@ export function pick<TData extends object, TKey extends keyof TData>(
         }, {} as Pick<TData, TKey>);
 };
 
+/** 表格的 prop */
 export const tableProps = {
   /** 显示表格边框 */
   border: {
     type: Boolean,
-    default: true
+    default: true,
   },
   /** 数据源 */
   list: {
@@ -57,17 +63,7 @@ export const tableProps = {
   /** 列配置 */
   columns: {
     type: Array as () => Column[],
-    default: () => [],
-  },
-  /** 表格宽度 */
-  defaultWidth: {
-    type: [String, Number] as (() => CSSLength)[],
-    default: 'auto',
-  },
-  /** 表格高度 */
-  defaultHeight: {
-    type: [String, Number] as (() => CSSLength)[],
-    default: 'auto',
+    required: true as const,
   },
   /** 分页配置 */
   pagerOptions: {
@@ -75,6 +71,7 @@ export const tableProps = {
   },
 };
 
+/** 翻页组件的 prop */
 export const pagerProps = {
   /** 每页显示的数量 */
   limit: {
@@ -89,9 +86,16 @@ export const pagerProps = {
   /** 当前页码 */
   page: {
     type: Number,
-    default: 1
-  }
+    default: 1,
+  },
+  /** 页码数量过多时，最多显示的页码数量 */
+  maxShowPage: {
+    type: Number,
+    default: 7,
+  },
 };
 
+/** 表格的 prop 类型 */
 export type TablePublicProps = IxPublicPropTypes<typeof tableProps>;
+/** 翻页组件的 prop 类型 */
 export type PagerPublicProps = IxPublicPropTypes<typeof pagerProps>;

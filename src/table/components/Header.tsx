@@ -1,7 +1,7 @@
 import { Column, pick, Slots, SortDirection, tableProps } from '../types';
 
 import { defineComponent, inject, set } from '@vue/composition-api';
-import { TABLE_TOKEN } from '../const';
+import { TABLE_TOKEN } from '../common/const';
 
 const sortArrowCls = 'table-sort-arrow';
 
@@ -56,7 +56,9 @@ function getColumnHTML(column: Column, slots: Slots, sortCallback: (field: strin
     sortCallback(column.key, column.sortDirection!);
   }
 
-  return <th class="c-table-header__item" onClick={onClick}>{header}{sort}</th>
+  const style = column?.width ? `width: ${column.width}` : '';
+
+  return <th class="c-table-header__item" style={style} onClick={onClick}>{header}{sort}</th>
 }
 
 export const CTableHeader = defineComponent({
