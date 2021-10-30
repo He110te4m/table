@@ -20,6 +20,13 @@ module.exports = {
               },
             },
           ],
+          // [
+          //   "babel-preset-vite",
+          //   {
+          //     "env": true, // defaults to true
+          //     "glob": false // defaults to true
+          //   }
+          // ],
           [
             '@vue/babel-preset-jsx',
             {
@@ -49,10 +56,10 @@ module.exports = {
   coverageReporters: ['json', 'lcov', 'text', 'cobertura'],
   coverageThreshold: {
     global: {
-      branches: 85,
-      functions: 85,
-      lines: 85,
-      statements: 85,
+      branches: 90,
+      functions: 90,
+      lines: 90,
+      statements: 90,
     },
   },
   coveragePathIgnorePatterns: ['/node_modules/', '<rootDir>/tests'],

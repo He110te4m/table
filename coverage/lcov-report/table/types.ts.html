@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/8</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/8</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
@@ -154,7 +154,16 @@
 <a name='L95'></a><a href='#L95'>95</a>
 <a name='L96'></a><a href='#L96'>96</a>
 <a name='L97'></a><a href='#L97'>97</a>
-<a name='L98'></a><a href='#L98'>98</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -192,10 +201,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -208,16 +218,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -232,6 +233,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -280,10 +288,15 @@ export type Column = {
   slot?: string;
   /** 标题插槽名，默认不使用插槽 */
   titleSlot?: string;
+  /** 是否可排序 */
   sortable?: boolean;
+  /** 当前的排序方向 */
   sortDirection?: SortDirection;
+  /** 当前列宽 */
+  width?: CSSLength;
 };
 &nbsp;
+/** 提取部分 prop */
 export function pick&lt;TData extends object, TKey extends keyof TData&gt;(
   data: TData,
   keys: TKey[]
@@ -296,11 +309,12 @@ export function pick&lt;TData extends object, TKey extends keyof TData&gt;(
         }, {} as Pick&lt;TData, TKey&gt;);
 };
 &nbsp;
+/** 表格的 prop */
 export const tableProps = {
   /** 显示表格边框 */
   border: {
     type: Boolean,
-    default: true
+    default: true,
   },
   /** 数据源 */
   list: {
@@ -310,17 +324,7 @@ export const tableProps = {
   /** 列配置 */
   columns: {
     type: Array as () =&gt; Column[],
-    default: () =&gt; [],
-  },
-  /** 表格宽度 */
-  defaultWidth: {
-    type: [String, Number] as (() =&gt; CSSLength)[],
-    default: 'auto',
-  },
-  /** 表格高度 */
-  defaultHeight: {
-    type: [String, Number] as (() =&gt; CSSLength)[],
-    default: 'auto',
+    required: true as const,
   },
   /** 分页配置 */
   pagerOptions: {
@@ -328,6 +332,7 @@ export const tableProps = {
   },
 };
 &nbsp;
+/** 翻页组件的 prop */
 export const pagerProps = {
   /** 每页显示的数量 */
   limit: {
@@ -342,11 +347,18 @@ export const pagerProps = {
   /** 当前页码 */
   page: {
     type: Number,
-    default: 1
-  }
+    default: 1,
+  },
+  /** 页码数量过多时，最多显示的页码数量 */
+  maxShowPage: {
+    type: Number,
+    default: 7,
+  },
 };
 &nbsp;
+/** 表格的 prop 类型 */
 export type TablePublicProps = IxPublicPropTypes&lt;typeof tableProps&gt;;
+/** 翻页组件的 prop 类型 */
 export type PagerPublicProps = IxPublicPropTypes&lt;typeof pagerProps&gt;;
 &nbsp;</pre></td></tr></table></pre>
 
@@ -355,7 +367,7 @@ export type PagerPublicProps = IxPublicPropTypes&lt;typeof pagerProps&gt;;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Oct 18 2021 21:46:53 GMT+0800 (中国标准时间)
+                at Sat Oct 30 2021 13:15:35 GMT+0800 (中国标准时间)
             </div>
         </div>
         <script src="../prettify.js"></script>

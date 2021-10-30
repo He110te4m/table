@@ -1,6 +1,6 @@
 import { Column, SortDirection } from '../types';
 
-export function sortData<TRecord extends Record<string, any>>(list: TRecord[], sortColumn?: Column) {
+export function sortData<TRecord extends Record<string, unknown>>(list: TRecord[], sortColumn?: Column) {
     if (!sortColumn || sortColumn.sortDirection === SortDirection.none || !sortColumn.sortable) {
       return list ?? [];
     }
