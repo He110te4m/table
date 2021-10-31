@@ -1,10 +1,10 @@
 <mxfile host="65bd71144e">
     <diagram id="e-KcvuYMJw2bdb7wawJA" name="Page-1">
-        <mxGraphModel dx="534" dy="1287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
+        <mxGraphModel dx="514" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E07A5F;dashed=1;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" edge="1" parent="1" source="7" target="10">
+                <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E07A5F;dashed=1;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" parent="1" source="7" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="306" y="720"/>
@@ -12,7 +12,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=12;fontColor=#393C56;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#E07A5F;labelBackgroundColor=#F4F1DE;" edge="1" parent="1" source="22" target="19">
+                <mxCell id="20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=12;fontColor=#393C56;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#E07A5F;labelBackgroundColor=#F4F1DE;" parent="1" source="22" target="19" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="446" y="470"/>
@@ -20,7 +20,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.005;entryY=0.348;entryDx=0;entryDy=0;fontSize=12;fontColor=#393C56;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#E07A5F;entryPerimeter=0;dashed=1;labelBackgroundColor=#F4F1DE;" edge="1" parent="1" source="7" target="19">
+                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.005;entryY=0.348;entryDx=0;entryDy=0;fontSize=12;fontColor=#393C56;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#E07A5F;entryPerimeter=0;dashed=1;labelBackgroundColor=#F4F1DE;" parent="1" source="7" target="19" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="416" y="500"/>
@@ -28,7 +28,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=12;fontColor=#393C56;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#E07A5F;labelBackgroundColor=#F4F1DE;" edge="1" parent="1" source="7" target="27">
+                <mxCell id="28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=12;fontColor=#393C56;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#E07A5F;labelBackgroundColor=#F4F1DE;" parent="1" source="7" target="27" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="330" y="360"/>
@@ -36,10 +36,10 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="7" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width: 100% ; height: 100% ; border-collapse: collapse&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Vue component&amp;gt;&amp;gt;Table&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;props&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; border: boolean;&lt;br&gt;&amp;nbsp; &amp;nbsp; list: Record&amp;lt;string, any&amp;gt;[];&lt;br&gt;&amp;nbsp; &amp;nbsp; columns: Column[];&lt;br&gt;&amp;nbsp; &amp;nbsp; defaultWidth: CSSLength;&lt;br&gt;&amp;nbsp; &amp;nbsp; defaultHeight: CSSLength;&lt;br&gt;&amp;nbsp; &amp;nbsp; pagerOptions: PagerPublicProps;&lt;br&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; curPage: number;&lt;br&gt;&amp;nbsp; &amp;nbsp; sortField: string;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;methods&amp;gt;&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;fillColor=none;overflow=fill;fontColor=#393C56;labelBorderColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="110" y="420" width="290" height="230" as="geometry"/>
+                <mxCell id="7" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width: 100% ; height: 100% ; border-collapse: collapse&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Vue component&amp;gt;&amp;gt;Table&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;props&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; border: boolean;&amp;nbsp; // 是否显示表格边框&lt;br&gt;&amp;nbsp; &amp;nbsp; list: Record&amp;lt;string, any&amp;gt;[];&amp;nbsp; // 表格数据&lt;br&gt;&amp;nbsp; &amp;nbsp; columns: Column[];&amp;nbsp; // 表格列配置&lt;br&gt;&amp;nbsp; &amp;nbsp; pagerOptions: PagerPublicProps;&amp;nbsp; // 分页配置&lt;br&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; dataList: Record&amp;lt;string, unknown&amp;gt;[]; // 当前页显示的数据;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;methods&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; sortByField: (filed: string) =&amp;gt; void;&amp;nbsp; // 表格根据按照列排序&lt;br&gt;&amp;nbsp; &amp;nbsp; jump: (page: number) =&amp;gt; void;&amp;nbsp; // 表格翻页&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;fillColor=none;overflow=fill;fontColor=#393C56;labelBorderColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="420" width="350" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;strokeColor=#E07A5F;startArrow=none;startFill=0;endArrow=diamond;endFill=1;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" edge="1" parent="1" source="10">
+                <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;strokeColor=#E07A5F;startArrow=none;startFill=0;endArrow=diamond;endFill=1;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" parent="1" source="10" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="186" y="650" as="targetPoint"/>
                         <Array as="points">
@@ -47,19 +47,19 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="10" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width: 100% ; height: 100% ; border-collapse: collapse&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Vue component&amp;gt;&amp;gt;TableHeader&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;props&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; columns: Column[];&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;methods&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; renderColumnHTML(column: Column): Element&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;overflow=fill;perimeterSpacing=1;strokeWidth=0;fontColor=#393C56;labelBorderColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="110" y="780" width="290" height="230" as="geometry"/>
+                <mxCell id="10" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width: 100% ; height: 100% ; border-collapse: collapse&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Vue component&amp;gt;&amp;gt;TableHeader&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;props&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; columns: Required&amp;lt;Column&amp;gt;[];&amp;nbsp; // 表格列&lt;br&gt;&amp;nbsp; &amp;nbsp; sortByField: (key: string) =&amp;gt; void;&amp;nbsp; // 排序函数，触发排序时的回调&lt;br&gt;&amp;nbsp; &amp;nbsp; sortColumn: Required&amp;lt;Column&amp;gt; | null;&amp;nbsp; // 当前排序时依据的列&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;methods&amp;gt;&amp;gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;overflow=fill;perimeterSpacing=1;strokeWidth=0;fontColor=#393C56;labelBorderColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="780" width="370" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="use" style="text;fillColor=none;html=1;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;fontColor=#393C56;" vertex="1" parent="1">
+                <mxCell id="12" value="use" style="text;fillColor=none;html=1;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;fontColor=#393C56;" parent="1" vertex="1">
                     <mxGeometry x="236" y="690" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="1" style="text;strokeColor=none;fillColor=none;html=1;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;fontColor=#393C56;" vertex="1" parent="1">
+                <mxCell id="17" value="1" style="text;strokeColor=none;fillColor=none;html=1;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;fontColor=#393C56;" parent="1" vertex="1">
                     <mxGeometry x="126" y="650" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="&lt;font style=&quot;font-size: 12px&quot;&gt;1&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#393C56;" vertex="1" parent="1">
+                <mxCell id="18" value="&lt;font style=&quot;font-size: 12px&quot;&gt;1&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#393C56;" parent="1" vertex="1">
                     <mxGeometry x="126" y="740" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#393C56;startArrow=none;startFill=0;endArrow=diamond;endFill=1;strokeColor=#E07A5F;labelBackgroundColor=#F4F1DE;" edge="1" parent="1" source="19">
+                <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=#393C56;startArrow=none;startFill=0;endArrow=diamond;endFill=1;strokeColor=#E07A5F;labelBackgroundColor=#F4F1DE;" parent="1" source="19" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="400" y="590" as="targetPoint"/>
                         <Array as="points">
@@ -67,19 +67,19 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="19" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width: 100% ; height: 100% ; border-collapse: collapse&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Vue component&amp;gt;&amp;gt;TableBody&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;props&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; list: Record&amp;lt;string, any&amp;gt;[];&lt;br&gt;&amp;nbsp; &amp;nbsp; columns: Column[];&lt;br&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; slots: Slots&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;methods&amp;gt;&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;fillColor=none;overflow=fill;fontColor=#393C56;labelBorderColor=#000000;fontSize=12;" vertex="1" parent="1">
+                <mxCell id="19" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width: 100% ; height: 100% ; border-collapse: collapse&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Vue component&amp;gt;&amp;gt;TableBody&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;props&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; list: Record&amp;lt;string, any&amp;gt;[];&lt;br&gt;&amp;nbsp; &amp;nbsp; columns: Required&amp;lt;Column&amp;gt;[];&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;methods&amp;gt;&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;fillColor=none;overflow=fill;fontColor=#393C56;labelBorderColor=#000000;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="480" y="420" width="290" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" value="use" style="text;strokeColor=none;fillColor=none;html=1;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;fontColor=#393C56;" vertex="1" parent="1">
+                <mxCell id="22" value="use" style="text;strokeColor=none;fillColor=none;html=1;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;fontColor=#393C56;" parent="1" vertex="1">
                     <mxGeometry x="386" y="470" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" value="&lt;font style=&quot;font-size: 12px&quot;&gt;1&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#393C56;" vertex="1" parent="1">
+                <mxCell id="25" value="&lt;font style=&quot;font-size: 12px&quot;&gt;1&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#393C56;" parent="1" vertex="1">
                     <mxGeometry x="356" y="550" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="&lt;font style=&quot;font-size: 12px&quot;&gt;1&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#393C56;" vertex="1" parent="1">
+                <mxCell id="26" value="&lt;font style=&quot;font-size: 12px&quot;&gt;1&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#393C56;" parent="1" vertex="1">
                     <mxGeometry x="416" y="550" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;endArrow=diamond;endFill=1;" edge="1" parent="1" source="27">
+                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#393C56;strokeColor=#E07A5F;fillColor=#F2CC8F;endArrow=diamond;endFill=1;" parent="1" source="27" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="200" y="420" as="targetPoint"/>
                         <Array as="points">
@@ -87,16 +87,16 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="27" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width: 100% ; height: 100% ; border-collapse: collapse&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Vue component&amp;gt;&amp;gt;Pager&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;props&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; limit: number;&lt;br&gt;&amp;nbsp; &amp;nbsp; total: number;&lt;br&gt;&amp;nbsp; &amp;nbsp; page: number;&lt;br&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; curPage: number;&lt;br&gt;&amp;nbsp; &amp;nbsp; pageList: number[]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;methods&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; onPageChange(page: number): void&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;fillColor=none;overflow=fill;fontColor=#393C56;labelBorderColor=#000000;fontSize=12;" vertex="1" parent="1">
-                    <mxGeometry x="110" y="110" width="290" height="230" as="geometry"/>
+                <mxCell id="27" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width: 100% ; height: 100% ; border-collapse: collapse&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Vue component&amp;gt;&amp;gt;Pager&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;props&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; limit: number;&amp;nbsp; // 每页显示的数量&lt;br&gt;&amp;nbsp; &amp;nbsp; total: number;&amp;nbsp; // 总条数&lt;br&gt;&amp;nbsp; &amp;nbsp; page: number;&amp;nbsp; // 当前页码&lt;br&gt;&amp;nbsp; &amp;nbsp; maxShowPage: number;&amp;nbsp; // 页码过多时，最多显示的页码数量&lt;br&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; curPage: number;&amp;nbsp; // 当前页码&lt;br&gt;&amp;nbsp; &amp;nbsp; pageCount: number;&amp;nbsp; // 总页数&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;lt;&amp;lt;methods&amp;gt;&amp;gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; changePage: (page: number) =&amp;gt; void;&amp;nbsp; // 跳转到指定页数&lt;br&gt;&amp;nbsp; &amp;nbsp; goFirstPage: () =&amp;gt; void;&amp;nbsp; // 跳转到首页&lt;br&gt;&amp;nbsp; &amp;nbsp; goLastPage: () =&amp;gt; void;&amp;nbsp; // 跳转到最后一页&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;fillColor=none;overflow=fill;fontColor=#393C56;labelBorderColor=#000000;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="110" width="380" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="&lt;font style=&quot;font-size: 12px&quot;&gt;use&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rounded=0;sketch=0;fontColor=#393C56;" vertex="1" parent="1">
+                <mxCell id="29" value="&lt;font style=&quot;font-size: 12px&quot;&gt;use&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rounded=0;sketch=0;fontColor=#393C56;" parent="1" vertex="1">
                     <mxGeometry x="300" y="360" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" value="&lt;font style=&quot;font-size: 12px&quot;&gt;0..1&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rounded=0;sketch=0;fontColor=#393C56;" vertex="1" parent="1">
+                <mxCell id="31" value="&lt;font style=&quot;font-size: 12px&quot;&gt;0..1&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rounded=0;sketch=0;fontColor=#393C56;" parent="1" vertex="1">
                     <mxGeometry x="136" y="330" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" value="&lt;font style=&quot;font-size: 12px&quot;&gt;1&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rounded=0;sketch=0;fontColor=#393C56;" vertex="1" parent="1">
+                <mxCell id="32" value="&lt;font style=&quot;font-size: 12px&quot;&gt;1&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rounded=0;sketch=0;fontColor=#393C56;" parent="1" vertex="1">
                     <mxGeometry x="136" y="380" width="100" height="40" as="geometry"/>
                 </mxCell>
             </root>
