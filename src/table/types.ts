@@ -35,8 +35,10 @@ export type Column = {
   width?: CSSLength;
 };
 
+export type TableDataType = Record<string, unknown>;
+
 /** 提取部分 prop */
-export function pick<TData extends object, TKey extends keyof TData>(
+export function pick<TData extends TableDataType, TKey extends keyof TData>(
   data: TData,
   keys: TKey[]
 ): Pick<TData, TKey> {
@@ -57,7 +59,7 @@ export const tableProps = {
   },
   /** 数据源 */
   list: {
-    type: Array as () => Record<string, any>[],
+    type: Array as () => TableDataType[],
     default: () => [],
   },
   /** 列配置 */
@@ -67,7 +69,7 @@ export const tableProps = {
   },
   /** 分页配置 */
   pagerOptions: {
-    type: Object as () => PagerPublicProps,
+    type: Object as () => PagerPublicProps & { hidePager?: boolean },
   },
 };
 

@@ -7,7 +7,8 @@ module.exports = {
   testEnvironment: 'jsdom',
   transform: {
     '^.+\\.vue$': 'vue-jest',
-    '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
+    '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$':
+      'jest-transform-stub',
     '^.+\\.(t|j)sx?$': [
       'babel-jest',
       {
@@ -20,13 +21,13 @@ module.exports = {
               },
             },
           ],
-          // [
-          //   "babel-preset-vite",
-          //   {
-          //     "env": true, // defaults to true
-          //     "glob": false // defaults to true
-          //   }
-          // ],
+          [
+            'babel-preset-vite',
+            {
+              env: true, // defaults to true
+              glob: false, // defaults to true
+            },
+          ],
           [
             '@vue/babel-preset-jsx',
             {
@@ -62,6 +63,10 @@ module.exports = {
       statements: 90,
     },
   },
-  coveragePathIgnorePatterns: ['/node_modules/', '<rootDir>/tests'],
+  coveragePathIgnorePatterns: [
+    '/node_modules/',
+    '<rootDir>/tests',
+    '<rootDir>/src/table/common/utils.ts',  // 动态打日志的函数
+  ],
   reporters: ['default', 'jest-junit'],
-}
+};

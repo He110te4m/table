@@ -20,7 +20,7 @@
 
 <script lang="ts">
 import { CTable } from '../src/table'
-import { defineComponent, reactive } from '@vue/composition-api'
+import { defineComponent, onMounted, reactive, watch, ref } from '@vue/composition-api'
 import { Column, SortDirection } from '../src/table/types';
 
 const data = Array.from({ length: 1000 }).map((_, idx) => ({
@@ -55,13 +55,20 @@ export default defineComponent({
         title: 'age',
         key: 'age',
         sortable: true,
-        sortDirection: SortDirection.asc
-
+        // sortDirection: SortDirection.asc
       }
     ]);
-    const list = reactive(data);
+    let list = ref<{ name: string; age: number }[]>([]);
     const pagerOpts = reactive({
       limit: 15
+    });
+
+    onMounted(() => {
+      list.value = data;
+
+      setTimeout(() => {
+        list.value[0].age = 120;
+      });
     });
 
     return {

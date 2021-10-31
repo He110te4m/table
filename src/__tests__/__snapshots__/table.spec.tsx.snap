@@ -4,25 +4,11 @@ exports[`Table cell slot 1`] = `
 "<div class=\\"c-table-wrapper\\">
   <table border=\\"true\\" class=\\"c-table\\">
     <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
     </tr>
-    <tbody class=\\"c-table-body\\">
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\"><span>Name is 李四</span></td>
-        <td class=\\"c-table-body__row__cell\\">16</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\"><span>Name is 张三</span></td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-    </tbody>
+    <tbody class=\\"c-table-body\\"></tbody>
   </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
 </div>"
 `;
 
@@ -30,25 +16,11 @@ exports[`Table custom cell slot name 1`] = `
 "<div class=\\"c-table-wrapper\\">
   <table border=\\"true\\" class=\\"c-table\\">
     <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
     </tr>
-    <tbody class=\\"c-table-body\\">
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\"><span>Name is 李四</span></td>
-        <td class=\\"c-table-body__row__cell\\">16</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\"><span>Name is 张三</span></td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-    </tbody>
+    <tbody class=\\"c-table-body\\"></tbody>
   </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
 </div>"
 `;
 
@@ -56,25 +28,11 @@ exports[`Table data missing 1`] = `
 "<div class=\\"c-table-wrapper\\">
   <table border=\\"true\\" class=\\"c-table\\">
     <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
     </tr>
-    <tbody class=\\"c-table-body\\">
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\"><span>Name is </span></td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\"><span>Name is 李四</span></td>
-        <td class=\\"c-table-body__row__cell\\"></td>
-      </tr>
-    </tbody>
+    <tbody class=\\"c-table-body\\"></tbody>
   </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
 </div>"
 `;
 
@@ -82,57 +40,29 @@ exports[`Table default sort 1`] = `
 "<div class=\\"c-table-wrapper\\">
   <table border=\\"true\\" class=\\"c-table\\">
     <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
     </tr>
-    <tbody class=\\"c-table-body\\">
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">李四</td>
-        <td class=\\"c-table-body__row__cell\\">16</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">张三</td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-    </tbody>
+    <tbody class=\\"c-table-body\\"></tbody>
   </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
 </div>"
 `;
 
-exports[`Table default sort 2`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow desc c-table-header__item__icon\\"></span></th>"`;
+exports[`Table default sort 2`] = `"<th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow desc c-table-header__item__icon\\"></span></th>"`;
 
-exports[`Table default sort 3`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>"`;
+exports[`Table default sort 3`] = `"<th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">name</span></th>"`;
 
-exports[`Table default sort 4`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>"`;
+exports[`Table default sort 4`] = `"<th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>"`;
 
 exports[`Table loadData 1`] = `
 "<div class=\\"c-table-wrapper\\">
   <table border=\\"true\\" class=\\"c-table\\">
     <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
     </tr>
-    <tbody class=\\"c-table-body\\">
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">张三</td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">李四</td>
-        <td class=\\"c-table-body__row__cell\\">16</td>
-      </tr>
-    </tbody>
+    <tbody class=\\"c-table-body\\"></tbody>
   </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
 </div>"
 `;
 
@@ -140,23 +70,619 @@ exports[`Table loadData 2`] = `
 "<div class=\\"c-table-wrapper\\">
   <table border=\\"true\\" class=\\"c-table\\">
     <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
     </tr>
     <tbody class=\\"c-table-body\\">
       <tr class=\\"c-table-body__row\\">
         <td class=\\"c-table-body__row__cell\\">张三</td>
-        <td class=\\"c-table-body__row__cell\\">18</td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
         <td class=\\"c-table-body__row__cell\\">李四</td>
-        <td class=\\"c-table-body__row__cell\\">20</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+    </tbody>
+  </table>
+</div>"
+`;
+
+exports[`Table pager 1`] = `
+"<div class=\\"c-table-wrapper\\">
+  <table border=\\"true\\" class=\\"c-table\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">69</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 1</td>
+        <td class=\\"c-table-body__row__cell\\">74</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 2</td>
+        <td class=\\"c-table-body__row__cell\\">36</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 3</td>
+        <td class=\\"c-table-body__row__cell\\">52</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 4</td>
+        <td class=\\"c-table-body__row__cell\\">60</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 5</td>
+        <td class=\\"c-table-body__row__cell\\">27</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 6</td>
+        <td class=\\"c-table-body__row__cell\\">6</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 7</td>
+        <td class=\\"c-table-body__row__cell\\">70</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 8</td>
+        <td class=\\"c-table-body__row__cell\\">68</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 9</td>
+        <td class=\\"c-table-body__row__cell\\">89</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 10</td>
+        <td class=\\"c-table-body__row__cell\\">15</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 11</td>
+        <td class=\\"c-table-body__row__cell\\">76</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 12</td>
+        <td class=\\"c-table-body__row__cell\\">59</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 13</td>
+        <td class=\\"c-table-body__row__cell\\">42</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 14</td>
+        <td class=\\"c-table-body__row__cell\\">49</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 15</td>
+        <td class=\\"c-table-body__row__cell\\">10</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 16</td>
+        <td class=\\"c-table-body__row__cell\\">29</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 17</td>
+        <td class=\\"c-table-body__row__cell\\">76</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 18</td>
+        <td class=\\"c-table-body__row__cell\\">98</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 19</td>
+        <td class=\\"c-table-body__row__cell\\">57</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 20</td>
+        <td class=\\"c-table-body__row__cell\\">48</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 21</td>
+        <td class=\\"c-table-body__row__cell\\">62</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 22</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 23</td>
+        <td class=\\"c-table-body__row__cell\\">88</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 24</td>
+        <td class=\\"c-table-body__row__cell\\">46</td>
+      </tr>
+    </tbody>
+  </table>
+  <dl class=\\"c-pager\\">
+    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">2</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">3</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">4</a></dd>
+    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
+  </dl>
+</div>"
+`;
+
+exports[`Table pager 2`] = `
+"<div class=\\"c-table-wrapper\\">
+  <table border=\\"true\\" class=\\"c-table\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 25</td>
+        <td class=\\"c-table-body__row__cell\\">50</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 26</td>
+        <td class=\\"c-table-body__row__cell\\">38</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 27</td>
+        <td class=\\"c-table-body__row__cell\\">36</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 28</td>
+        <td class=\\"c-table-body__row__cell\\">98</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 29</td>
+        <td class=\\"c-table-body__row__cell\\">9</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 30</td>
+        <td class=\\"c-table-body__row__cell\\">81</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 31</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 32</td>
+        <td class=\\"c-table-body__row__cell\\">24</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 33</td>
+        <td class=\\"c-table-body__row__cell\\">27</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 34</td>
+        <td class=\\"c-table-body__row__cell\\">1</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 35</td>
+        <td class=\\"c-table-body__row__cell\\">35</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 36</td>
+        <td class=\\"c-table-body__row__cell\\">22</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 37</td>
+        <td class=\\"c-table-body__row__cell\\">69</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 38</td>
+        <td class=\\"c-table-body__row__cell\\">74</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 39</td>
+        <td class=\\"c-table-body__row__cell\\">74</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 40</td>
+        <td class=\\"c-table-body__row__cell\\">53</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 41</td>
+        <td class=\\"c-table-body__row__cell\\">74</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 42</td>
+        <td class=\\"c-table-body__row__cell\\">39</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 43</td>
+        <td class=\\"c-table-body__row__cell\\">32</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 44</td>
+        <td class=\\"c-table-body__row__cell\\">37</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 45</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 46</td>
+        <td class=\\"c-table-body__row__cell\\">93</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 47</td>
+        <td class=\\"c-table-body__row__cell\\">36</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 48</td>
+        <td class=\\"c-table-body__row__cell\\">73</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 49</td>
+        <td class=\\"c-table-body__row__cell\\">5</td>
       </tr>
     </tbody>
   </table>
   <dl class=\\"c-pager\\">
     <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">1</a></dd>
+    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">2</span></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">3</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">4</a></dd>
+    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
+  </dl>
+</div>"
+`;
+
+exports[`Table pager 3`] = `
+"<div class=\\"c-table-wrapper\\">
+  <table border=\\"true\\" class=\\"c-table\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 25</td>
+        <td class=\\"c-table-body__row__cell\\">50</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 26</td>
+        <td class=\\"c-table-body__row__cell\\">38</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 27</td>
+        <td class=\\"c-table-body__row__cell\\">36</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 28</td>
+        <td class=\\"c-table-body__row__cell\\">98</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 29</td>
+        <td class=\\"c-table-body__row__cell\\">9</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 30</td>
+        <td class=\\"c-table-body__row__cell\\">81</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 31</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 32</td>
+        <td class=\\"c-table-body__row__cell\\">24</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 33</td>
+        <td class=\\"c-table-body__row__cell\\">27</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 34</td>
+        <td class=\\"c-table-body__row__cell\\">1</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 35</td>
+        <td class=\\"c-table-body__row__cell\\">35</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 36</td>
+        <td class=\\"c-table-body__row__cell\\">22</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 37</td>
+        <td class=\\"c-table-body__row__cell\\">69</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 38</td>
+        <td class=\\"c-table-body__row__cell\\">74</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 39</td>
+        <td class=\\"c-table-body__row__cell\\">74</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 40</td>
+        <td class=\\"c-table-body__row__cell\\">53</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 41</td>
+        <td class=\\"c-table-body__row__cell\\">74</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 42</td>
+        <td class=\\"c-table-body__row__cell\\">39</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 43</td>
+        <td class=\\"c-table-body__row__cell\\">32</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 44</td>
+        <td class=\\"c-table-body__row__cell\\">37</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 45</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 46</td>
+        <td class=\\"c-table-body__row__cell\\">93</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 47</td>
+        <td class=\\"c-table-body__row__cell\\">36</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 48</td>
+        <td class=\\"c-table-body__row__cell\\">73</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 49</td>
+        <td class=\\"c-table-body__row__cell\\">5</td>
+      </tr>
+    </tbody>
+  </table>
+  <dl class=\\"c-pager\\">
     <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">2</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">3</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">4</a></dd>
+    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
+  </dl>
+</div>"
+`;
+
+exports[`Table pager 4`] = `
+"<div class=\\"c-table-wrapper\\">
+  <table border=\\"true\\" class=\\"c-table\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 75</td>
+        <td class=\\"c-table-body__row__cell\\">57</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 76</td>
+        <td class=\\"c-table-body__row__cell\\">81</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 77</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 78</td>
+        <td class=\\"c-table-body__row__cell\\">23</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 79</td>
+        <td class=\\"c-table-body__row__cell\\">38</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 80</td>
+        <td class=\\"c-table-body__row__cell\\">94</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 81</td>
+        <td class=\\"c-table-body__row__cell\\">84</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 82</td>
+        <td class=\\"c-table-body__row__cell\\">5</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 83</td>
+        <td class=\\"c-table-body__row__cell\\">8</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 84</td>
+        <td class=\\"c-table-body__row__cell\\">9</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 85</td>
+        <td class=\\"c-table-body__row__cell\\">15</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 86</td>
+        <td class=\\"c-table-body__row__cell\\">71</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 87</td>
+        <td class=\\"c-table-body__row__cell\\">3</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 88</td>
+        <td class=\\"c-table-body__row__cell\\">65</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 89</td>
+        <td class=\\"c-table-body__row__cell\\">74</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 90</td>
+        <td class=\\"c-table-body__row__cell\\">6</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 91</td>
+        <td class=\\"c-table-body__row__cell\\">45</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 92</td>
+        <td class=\\"c-table-body__row__cell\\">95</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 93</td>
+        <td class=\\"c-table-body__row__cell\\">56</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 94</td>
+        <td class=\\"c-table-body__row__cell\\">84</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 95</td>
+        <td class=\\"c-table-body__row__cell\\">78</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 96</td>
+        <td class=\\"c-table-body__row__cell\\">55</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 97</td>
+        <td class=\\"c-table-body__row__cell\\">92</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 98</td>
+        <td class=\\"c-table-body__row__cell\\">3</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 99</td>
+        <td class=\\"c-table-body__row__cell\\">35</td>
+      </tr>
+    </tbody>
+  </table>
+  <dl class=\\"c-pager\\">
+    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">1</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">2</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">3</a></dd>
+    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">4</span></dd>
+  </dl>
+</div>"
+`;
+
+exports[`Table pager's over limit options 1`] = `
+"<div class=\\"c-table-wrapper\\">
+  <table border=\\"true\\" class=\\"c-table\\">
+    <tr class=\\"c-table-header\\">
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+    </tr>
+    <tbody class=\\"c-table-body\\">
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">69</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 1</td>
+        <td class=\\"c-table-body__row__cell\\">74</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 2</td>
+        <td class=\\"c-table-body__row__cell\\">36</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 3</td>
+        <td class=\\"c-table-body__row__cell\\">52</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 4</td>
+        <td class=\\"c-table-body__row__cell\\">60</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 5</td>
+        <td class=\\"c-table-body__row__cell\\">27</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 6</td>
+        <td class=\\"c-table-body__row__cell\\">6</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 7</td>
+        <td class=\\"c-table-body__row__cell\\">70</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 8</td>
+        <td class=\\"c-table-body__row__cell\\">68</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 9</td>
+        <td class=\\"c-table-body__row__cell\\">89</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 10</td>
+        <td class=\\"c-table-body__row__cell\\">15</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 11</td>
+        <td class=\\"c-table-body__row__cell\\">76</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 12</td>
+        <td class=\\"c-table-body__row__cell\\">59</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 13</td>
+        <td class=\\"c-table-body__row__cell\\">42</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 14</td>
+        <td class=\\"c-table-body__row__cell\\">49</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 15</td>
+        <td class=\\"c-table-body__row__cell\\">10</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 16</td>
+        <td class=\\"c-table-body__row__cell\\">29</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 17</td>
+        <td class=\\"c-table-body__row__cell\\">76</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 18</td>
+        <td class=\\"c-table-body__row__cell\\">98</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 19</td>
+        <td class=\\"c-table-body__row__cell\\">57</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 20</td>
+        <td class=\\"c-table-body__row__cell\\">48</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 21</td>
+        <td class=\\"c-table-body__row__cell\\">62</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 22</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 23</td>
+        <td class=\\"c-table-body__row__cell\\">88</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 24</td>
+        <td class=\\"c-table-body__row__cell\\">46</td>
+      </tr>
+    </tbody>
+  </table>
+  <dl class=\\"c-pager\\">
+    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">2</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">3</a></dd>
+    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">4</a></dd>
     <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
   </dl>
 </div>"
@@ -166,99 +692,11 @@ exports[`Table render 1`] = `
 "<div class=\\"c-table-wrapper\\">
   <table border=\\"true\\" class=\\"c-table\\">
     <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
     </tr>
     <tbody class=\\"c-table-body\\"></tbody>
   </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
-</div>"
-`;
-
-exports[`Table showPager 1`] = `
-"<div class=\\"c-table-wrapper\\">
-  <table border=\\"true\\" class=\\"c-table\\">
-    <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
-    </tr>
-    <tbody class=\\"c-table-body\\">
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">张三</td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">李四</td>
-        <td class=\\"c-table-body__row__cell\\">16</td>
-      </tr>
-    </tbody>
-  </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
-</div>"
-`;
-
-exports[`Table showPager 2`] = `
-"<div class=\\"c-table-wrapper\\">
-  <table border=\\"true\\" class=\\"c-table\\">
-    <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
-    </tr>
-    <tbody class=\\"c-table-body\\">
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">张三</td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">李四</td>
-        <td class=\\"c-table-body__row__cell\\">16</td>
-      </tr>
-    </tbody>
-  </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
-    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">2</a></dd>
-    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">3</a></dd>
-    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">4</a></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
-</div>"
-`;
-
-exports[`Table showPager 3`] = `
-"<div class=\\"c-table-wrapper\\">
-  <table border=\\"true\\" class=\\"c-table\\">
-    <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
-    </tr>
-    <tbody class=\\"c-table-body\\">
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">张三</td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">李四</td>
-        <td class=\\"c-table-body__row__cell\\">16</td>
-      </tr>
-    </tbody>
-  </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
-    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">2</a></dd>
-    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">3</a></dd>
-    <dd class=\\"c-pager__item \\"><a class=\\"c-pager__item__no\\">4</a></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
 </div>"
 `;
 
@@ -266,118 +704,44 @@ exports[`Table sort 1`] = `
 "<div class=\\"c-table-wrapper\\">
   <table border=\\"true\\" class=\\"c-table\\">
     <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
     </tr>
-    <tbody class=\\"c-table-body\\">
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">张三</td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">李四</td>
-        <td class=\\"c-table-body__row__cell\\">16</td>
-      </tr>
-    </tbody>
+    <tbody class=\\"c-table-body\\"></tbody>
   </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
 </div>"
 `;
 
-exports[`Table sort 2`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>"`;
+exports[`Table sort 2`] = `"<th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>"`;
 
-exports[`Table sort 3`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow desc c-table-header__item__icon\\"></span></th>"`;
+exports[`Table sort 3`] = `"<th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow desc c-table-header__item__icon\\"></span></th>"`;
 
-exports[`Table sort 4`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span></th>"`;
+exports[`Table sort 4`] = `"<th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>"`;
 
-exports[`Table sort 5`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>"`;
+exports[`Table sort 5`] = `"<th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>"`;
 
 exports[`Table sort not sortable column 1`] = `
 "<div class=\\"c-table-wrapper\\">
   <table border=\\"true\\" class=\\"c-table\\">
     <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
-    </tr>
-    <tbody class=\\"c-table-body\\">
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">李四</td>
-        <td class=\\"c-table-body__row__cell\\">16</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">张三</td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-    </tbody>
-  </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
-</div>"
-`;
-
-exports[`Table sort not sortable column 2`] = `"<th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>"`;
-
-exports[`Table sortMethod 1`] = `
-"<div class=\\"c-table-wrapper\\">
-  <table border=\\"true\\" class=\\"c-table\\">
-    <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">name</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
     </tr>
     <tbody class=\\"c-table-body\\"></tbody>
   </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
 </div>"
 `;
 
-exports[`Table sortMethod 2`] = `
-"<div class=\\"c-table-wrapper\\">
-  <table border=\\"true\\" class=\\"c-table\\">
-    <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">name</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
-    </tr>
-    <tbody class=\\"c-table-body\\"></tbody>
-  </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
-</div>"
-`;
+exports[`Table sort not sortable column 2`] = `"<th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>"`;
 
 exports[`Table title slot 1`] = `
 "<div class=\\"c-table-wrapper\\">
   <table border=\\"true\\" class=\\"c-table\\">
     <tr class=\\"c-table-header\\">
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">nameSlot</span><span class=\\"table-sort-arrow asc c-table-header__item__icon\\"></span></th>
-      <th class=\\"c-table-header__item\\"><span class=\\"c-table-header__item__text\\">age</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: 200px;\\"><span class=\\"c-table-header__item__text\\">nameSlot</span></th>
+      <th class=\\"c-table-header__item\\" style=\\"width: auto;\\"><span class=\\"c-table-header__item__text\\">age</span></th>
     </tr>
-    <tbody class=\\"c-table-body\\">
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">李四</td>
-        <td class=\\"c-table-body__row__cell\\">16</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">张三</td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-    </tbody>
+    <tbody class=\\"c-table-body\\"></tbody>
   </table>
-  <dl class=\\"c-pager\\">
-    <dd class=\\"c-pager__item c-pager__go-first\\"><a class=\\"c-pager__item__no\\">&lt;&lt;</a></dd>
-    <dd class=\\"c-pager__item c-pager__item--current\\"><span class=\\"c-pager__item__no\\">1</span></dd>
-    <dd class=\\"c-pager__item c-pager__go-end\\"><a class=\\"c-pager__item__no\\">&gt;&gt;</a></dd>
-  </dl>
 </div>"
 `;

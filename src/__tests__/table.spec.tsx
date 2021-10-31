@@ -10,12 +10,21 @@ const columns: Column[] = [
     slot: 'nameContent',
     titleSlot: 'nameSlot',
     sortable: true,
+    width: 200
   },
   {
     title: 'age',
     key: 'age',
   },
 ];
+
+const dataLength = 100;
+const dataLimit = 25;
+const expectPage = Math.ceil(dataLength / dataLimit);
+const list = Array.from({ length: dataLength }).map((_, idx) => ({
+  name: `test ${idx}`,
+  age: Math.ceil(Math.random() * 100)
+}));
 
 describe('Table', () => {
   const TableMount = (options?: ThisTypedMountOptions<Vue>) =>
@@ -60,40 +69,67 @@ describe('Table', () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
-  test('showPager', async () => {
+  test('pager', async () => {
+    const wrapper = TableMount({
+      propsData: {
+        list,
+        pagerOptions: {
+          limit: dataLimit
+        }
+      }
+    });
+    let allPageItem = wrapper.findAll('.c-pager__item__no');
+    expect(allPageItem.wrappers).toHaveLength(0);
+
+    await wrapper.setProps({
+      list,
+      pagerOptions: {
+        limit: dataLimit
+      }
+    });
+    expect(wrapper.html()).toMatchSnapshot();
+
+    // 处于第一页时，没有回到首页，所以这时候显示的翻页按钮数量为总页码 + 1
+    allPageItem = wrapper.findAll('.c-pager__item__no');
+    expect(allPageItem.wrappers).toHaveLength(expectPage + 1);
+
+    // 跳到第二页，此时就有回到首页按钮，所以显示的翻页按钮数量为总页码 + 2
+    const [_1, secondPageButton] = allPageItem.wrappers;
+    await secondPageButton.trigger('click');
+    allPageItem = wrapper.findAll('.c-pager__item__no');
+    expect(allPageItem.wrappers).toHaveLength(expectPage + 2);
+
+    // 取出到首页和到尾页按钮
+    const [goFirstPageButton, __1, _2, _3, _4, goLastPageButton] = allPageItem.wrappers;
+    expect(wrapper.html()).toMatchSnapshot();
+
+    // 测试跳转到首页功能
+    await goFirstPageButton.trigger('click');
+    expect(wrapper.html()).toMatchSnapshot();
+    allPageItem = wrapper.findAll('.c-pager__item__no');
+    expect(allPageItem.wrappers).toHaveLength(expectPage + 1);
+
+    // 测试跳转到尾页功能
+    await goLastPageButton.trigger('click');
+    expect(wrapper.html()).toMatchSnapshot();
+    allPageItem = wrapper.findAll('.c-pager__item__no');
+    expect(allPageItem.wrappers).toHaveLength(expectPage + 1);
+  });
+
+  test('pager\'s over limit options', async () => {
     const wrapper = TableMount();
     await wrapper.setProps({
-      list: [
-        {
-          name: '张三',
-          age: 14,
-        },
-        {
-          name: '李四',
-          age: 16,
-        },
-      ],
-      pagerOptions: {},
-    });
-    expect(wrapper.html()).toMatchSnapshot();
-
-    await wrapper.setProps({
+      list,
       pagerOptions: {
-        total: 100,
-        limit: 25,
-        page: 1,
-      },
+        page: expectPage + 1,
+        limit: dataLimit,
+        maxShowPage: 6
+      }
     });
-    expect(wrapper.html()).toMatchSnapshot();
 
+    expect(wrapper.html()).toMatchSnapshot();
     const allPageItem = wrapper.findAll('.c-pager__item__no');
-    expect(allPageItem).toBeTruthy();
-
-    const [, secondItem] = allPageItem.wrappers;
-    expect(secondItem).toBeTruthy();
-
-    await secondItem.trigger('click');
-    expect(wrapper.html()).toMatchSnapshot();
+    expect(allPageItem.wrappers).toHaveLength(expectPage + 1);
   });
 
   test('sort', async () => {
@@ -298,21 +334,47 @@ describe('Table', () => {
     });
     expect(wrapper.html()).toMatchSnapshot();
   });
-  test('jump page method', () => {
-    const wrapper = TableMount({
-      propsData: [
-        {
-          name: '张三',
-          age: 14,
-        },
-        {
-          name: '李四',
-          age: 16,
-        },
-      ]
+
+  test('hooks: data store', async () => {
+    const wrapper = TableMount();
+    await wrapper.setProps({
+      list,
+      pagerOptions: {
+        limit: -1,
+        page: -1
+      }
     });
-    expect(wrapper.html()).toMatchSnapshot();
-    (wrapper.vm as Record<string, any>).jumpPage(2);
-    expect(wrapper.html()).toMatchSnapshot();
+
+    const store = (wrapper.vm as Record<string, any>).dataStore;
+
+    expect(store.getLimit()).toBe(20);
+    expect(store.getCurrentPage()).toBe(1);
+    expect(store.getAllData()).toEqual(list);
+    const curData = store.getData();
+    store.jump(100);
+    expect(store.getData()).toEqual(curData);
+    expect(store.getData(100)).toEqual([]);
+    expect(store.getData(-1)).toEqual([]);
+    expect(store.getData(1.1)).toEqual([]);
+    const newData = list.slice(2, 12);
+    store.setData(newData);
+    expect(store.getAllData()).toEqual(newData);
   });
+
+  test('hooks: sortable', async () => {
+    const wrapper = TableMount();
+    await wrapper.setProps({
+      list,
+      pagerOptions: {
+        limit: 10
+      }
+    });
+
+    const vm: Record<string, any> = wrapper.vm;
+
+    vm.sortByField('none');
+    expect(vm.dataStore.getData()).toEqual(list.slice(0, 10));
+    vm.sortByField('age');
+    expect(vm.dataStore.getData()).toEqual(list.slice(0, 10));
+  })
 });
