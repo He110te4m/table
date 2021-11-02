@@ -26,10 +26,10 @@ const list = Array.from({ length: dataLength }).map((_, idx) => ({
   age: Math.ceil(Math.random() * 100)
 }));
 
-describe('Table', () => {
-  const TableMount = (options?: ThisTypedMountOptions<Vue>) =>
-    mount(CTable, { ...options, propsData: { columns } });
+const TableMount = (options?: ThisTypedMountOptions<Vue>) =>
+  mount(CTable, { ...options, propsData: { columns } });
 
+describe('Table', () => {
   test('render', () => {
     const wrapper = TableMount();
     expect(wrapper.html()).toMatchSnapshot();
@@ -69,69 +69,114 @@ describe('Table', () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
-  test('pager', async () => {
-    const wrapper = TableMount({
-      propsData: {
-        list,
-        pagerOptions: {
-          limit: dataLimit
-        }
-      }
-    });
-    let allPageItem = wrapper.findAll('.c-pager__item__no');
-    expect(allPageItem.wrappers).toHaveLength(0);
-
-    await wrapper.setProps({
-      list,
-      pagerOptions: {
-        limit: dataLimit
-      }
-    });
-    expect(wrapper.html()).toMatchSnapshot();
-
-    // 处于第一页时，没有回到首页，所以这时候显示的翻页按钮数量为总页码 + 1
-    allPageItem = wrapper.findAll('.c-pager__item__no');
-    expect(allPageItem.wrappers).toHaveLength(expectPage + 1);
-
-    // 跳到第二页，此时就有回到首页按钮，所以显示的翻页按钮数量为总页码 + 2
-    const [_1, secondPageButton] = allPageItem.wrappers;
-    await secondPageButton.trigger('click');
-    allPageItem = wrapper.findAll('.c-pager__item__no');
-    expect(allPageItem.wrappers).toHaveLength(expectPage + 2);
-
-    // 取出到首页和到尾页按钮
-    const [goFirstPageButton, __1, _2, _3, _4, goLastPageButton] = allPageItem.wrappers;
-    expect(wrapper.html()).toMatchSnapshot();
-
-    // 测试跳转到首页功能
-    await goFirstPageButton.trigger('click');
-    expect(wrapper.html()).toMatchSnapshot();
-    allPageItem = wrapper.findAll('.c-pager__item__no');
-    expect(allPageItem.wrappers).toHaveLength(expectPage + 1);
-
-    // 测试跳转到尾页功能
-    await goLastPageButton.trigger('click');
-    expect(wrapper.html()).toMatchSnapshot();
-    allPageItem = wrapper.findAll('.c-pager__item__no');
-    expect(allPageItem.wrappers).toHaveLength(expectPage + 1);
-  });
-
-  test('pager\'s over limit options', async () => {
+  test('emptyData', async () => {
     const wrapper = TableMount();
-    await wrapper.setProps({
-      list,
-      pagerOptions: {
-        page: expectPage + 1,
-        limit: dataLimit,
-        maxShowPage: 6
-      }
-    });
+    expect(wrapper).toMatchSnapshot();
 
-    expect(wrapper.html()).toMatchSnapshot();
-    const allPageItem = wrapper.findAll('.c-pager__item__no');
-    expect(allPageItem.wrappers).toHaveLength(expectPage + 1);
+    const emptyText = 'The data of table is empty';
+    const emptySlotWrapper = TableMount({
+      scopedSlots: {
+        emptyData: () => <span>{emptyText}</span>
+      },
+    });
+    expect(emptySlotWrapper.html()).toContain(emptyText);
   });
 
+  test('data missing', async () => {
+    const wrapper = TableMount({
+      scopedSlots: {
+        nameContent: ({ value }: { value: string; }) => <span>Name is {value}</span>,
+      },
+    });
+    await wrapper.setProps({
+      list: [
+        {
+          age: 14,
+        },
+        {
+          name: '李四',
+        },
+      ],
+    });
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+});
+
+describe('slot', () => {
+  test('title slot', async () => {
+    const nameSlot = 'nameSlot';
+
+    const wrapper = TableMount({
+      slots: {
+        nameSlot: nameSlot,
+      },
+    });
+    await wrapper.setProps({
+      list: [
+        {
+          name: '张三',
+          age: 14,
+        },
+        {
+          name: '李四',
+          age: 16,
+        },
+      ],
+    });
+    expect(wrapper.html()).toMatchSnapshot();
+
+    const headerItems = wrapper.findAll('.c-table-header__item');
+    expect(headerItems).toBeTruthy();
+    const [nameHeader] = headerItems.wrappers;
+    expect(nameHeader).toBeTruthy();
+
+    expect(nameHeader.text()).toEqual(nameSlot);
+  });
+
+  test('cell slot', async () => {
+    const wrapper = TableMount({
+      scopedSlots: {
+        name: ({ value }: { value: string; }) => <span>Name is {value}</span>
+      },
+    });
+    await wrapper.setProps({
+      list: [
+        {
+          name: '张三',
+          age: 14,
+        },
+        {
+          name: '李四',
+          age: 16,
+        },
+      ],
+    });
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  test('custom cell slot name', async () => {
+    const wrapper = TableMount({
+      scopedSlots: {
+        nameContent: ({ value }: { value: string; }) => <span>Name is {value}</span>
+      },
+    });
+    await wrapper.setProps({
+      list: [
+        {
+          name: '张三',
+          age: 14,
+        },
+        {
+          name: '李四',
+          age: 16,
+        },
+      ],
+    });
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+});
+
+describe('sort', () => {
   test('sort', async () => {
     const wrapper = TableMount();
     await wrapper.setProps({
@@ -243,98 +288,9 @@ describe('Table', () => {
     expect(ageHeader.html()).not.toContain('table-sort-arrow');
     expect(ageHeader.html()).toMatchSnapshot();
   });
+});
 
-  test('title slot', async () => {
-    const nameSlot = 'nameSlot';
-
-    const wrapper = TableMount({
-      slots: {
-        nameSlot: nameSlot,
-      },
-    });
-    await wrapper.setProps({
-      list: [
-        {
-          name: '张三',
-          age: 14,
-        },
-        {
-          name: '李四',
-          age: 16,
-        },
-      ],
-    });
-    expect(wrapper.html()).toMatchSnapshot();
-
-    const headerItems = wrapper.findAll('.c-table-header__item');
-    expect(headerItems).toBeTruthy();
-    const [nameHeader] = headerItems.wrappers;
-    expect(nameHeader).toBeTruthy();
-
-    expect(nameHeader.text()).toEqual(nameSlot);
-  });
-
-  test('cell slot', async () => {
-    const wrapper = TableMount({
-      scopedSlots: {
-        name: ({ value }: { value: string; }) => <span>Name is {value}</span>
-      },
-    });
-    await wrapper.setProps({
-      list: [
-        {
-          name: '张三',
-          age: 14,
-        },
-        {
-          name: '李四',
-          age: 16,
-        },
-      ],
-    });
-    expect(wrapper.html()).toMatchSnapshot();
-  });
-
-  test('custom cell slot name', async () => {
-    const wrapper = TableMount({
-      scopedSlots: {
-        nameContent: ({ value }: { value: string; }) => <span>Name is {value}</span>
-      },
-    });
-    await wrapper.setProps({
-      list: [
-        {
-          name: '张三',
-          age: 14,
-        },
-        {
-          name: '李四',
-          age: 16,
-        },
-      ],
-    });
-    expect(wrapper.html()).toMatchSnapshot();
-  });
-
-  test('data missing', async () => {
-    const wrapper = TableMount({
-      scopedSlots: {
-        nameContent: ({ value }: { value: string; }) => <span>Name is {value}</span>,
-      },
-    });
-    await wrapper.setProps({
-      list: [
-        {
-          age: 14,
-        },
-        {
-          name: '李四',
-        },
-      ],
-    });
-    expect(wrapper.html()).toMatchSnapshot();
-  });
-
+describe('hooks', () => {
   test('hooks: data store', async () => {
     const wrapper = TableMount();
     await wrapper.setProps({
@@ -376,5 +332,70 @@ describe('Table', () => {
     expect(vm.dataStore.getData()).toEqual(list.slice(0, 10));
     vm.sortByField('age');
     expect(vm.dataStore.getData()).toEqual(list.slice(0, 10));
-  })
+  });
+});
+
+describe('pager', () => {
+  test('render', async () => {
+    const wrapper = TableMount({
+      propsData: {
+        list,
+        pagerOptions: {
+          limit: dataLimit
+        }
+      }
+    });
+    let allPageItem = wrapper.findAll('.c-pager__item__no');
+    expect(allPageItem.wrappers).toHaveLength(0);
+
+    await wrapper.setProps({
+      list,
+      pagerOptions: {
+        limit: dataLimit
+      }
+    });
+    expect(wrapper.html()).toMatchSnapshot();
+
+    // 处于第一页时，没有回到首页，所以这时候显示的翻页按钮数量为总页码 + 1
+    allPageItem = wrapper.findAll('.c-pager__item__no');
+    expect(allPageItem.wrappers).toHaveLength(expectPage + 1);
+
+    // 跳到第二页，此时就有回到首页按钮，所以显示的翻页按钮数量为总页码 + 2
+    const [_1, secondPageButton] = allPageItem.wrappers;
+    await secondPageButton.trigger('click');
+    allPageItem = wrapper.findAll('.c-pager__item__no');
+    expect(allPageItem.wrappers).toHaveLength(expectPage + 2);
+
+    // 取出到首页和到尾页按钮
+    const [goFirstPageButton, __1, _2, _3, _4, goLastPageButton] = allPageItem.wrappers;
+    expect(wrapper.html()).toMatchSnapshot();
+
+    // 测试跳转到首页功能
+    await goFirstPageButton.trigger('click');
+    expect(wrapper.html()).toMatchSnapshot();
+    allPageItem = wrapper.findAll('.c-pager__item__no');
+    expect(allPageItem.wrappers).toHaveLength(expectPage + 1);
+
+    // 测试跳转到尾页功能
+    await goLastPageButton.trigger('click');
+    expect(wrapper.html()).toMatchSnapshot();
+    allPageItem = wrapper.findAll('.c-pager__item__no');
+    expect(allPageItem.wrappers).toHaveLength(expectPage + 1);
+  });
+
+  test('pager\'s over limit options', async () => {
+    const wrapper = TableMount();
+    await wrapper.setProps({
+      list,
+      pagerOptions: {
+        page: expectPage + 1,
+        limit: dataLimit,
+        maxShowPage: 6
+      }
+    });
+
+    expect(wrapper.html()).toMatchSnapshot();
+    const allPageItem = wrapper.findAll('.c-pager__item__no');
+    expect(allPageItem.wrappers).toHaveLength(expectPage + 1);
+  });
 });

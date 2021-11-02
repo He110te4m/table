@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="13" failures="0" errors="0" time="8.527">
-  <testsuite name="Table" errors="0" failures="0" skipped="0" timestamp="2021-10-31T08:27:45" time="3.869" tests="13">
-    <testcase classname="Table render" name="Table render" time="0.078">
+<testsuites name="jest tests" tests="14" failures="0" errors="0" time="9.082">
+  <testsuite name="Table" errors="0" failures="0" skipped="0" timestamp="2021-11-02T15:16:21" time="5.102" tests="14">
+    <testcase classname="Table render" name="Table render" time="0.061">
     </testcase>
-    <testcase classname="Table loadData" name="Table loadData" time="0.031">
+    <testcase classname="Table loadData" name="Table loadData" time="0.037">
     </testcase>
-    <testcase classname="Table pager" name="Table pager" time="0.207">
-    </testcase>
-    <testcase classname="Table pager&apos;s over limit options" name="Table pager&apos;s over limit options" time="0.083">
-    </testcase>
-    <testcase classname="Table sort" name="Table sort" time="0.063">
-    </testcase>
-    <testcase classname="Table default sort" name="Table default sort" time="0.034">
-    </testcase>
-    <testcase classname="Table sort not sortable column" name="Table sort not sortable column" time="0.029">
-    </testcase>
-    <testcase classname="Table title slot" name="Table title slot" time="0.05">
-    </testcase>
-    <testcase classname="Table cell slot" name="Table cell slot" time="0.018">
-    </testcase>
-    <testcase classname="Table custom cell slot name" name="Table custom cell slot name" time="0.018">
+    <testcase classname="Table emptyData" name="Table emptyData" time="0.044">
     </testcase>
     <testcase classname="Table data missing" name="Table data missing" time="0.019">
     </testcase>
-    <testcase classname="Table hooks: data store" name="Table hooks: data store" time="0.042">
+    <testcase classname="slot title slot" name="slot title slot" time="0.052">
     </testcase>
-    <testcase classname="Table hooks: sortable" name="Table hooks: sortable" time="0.041">
+    <testcase classname="slot cell slot" name="slot cell slot" time="0.016">
+    </testcase>
+    <testcase classname="slot custom cell slot name" name="slot custom cell slot name" time="0.017">
+    </testcase>
+    <testcase classname="sort sort" name="sort sort" time="0.065">
+    </testcase>
+    <testcase classname="sort default sort" name="sort default sort" time="0.041">
+    </testcase>
+    <testcase classname="sort sort not sortable column" name="sort sort not sortable column" time="0.027">
+    </testcase>
+    <testcase classname="hooks hooks: data store" name="hooks hooks: data store" time="0.057">
+    </testcase>
+    <testcase classname="hooks hooks: sortable" name="hooks hooks: sortable" time="0.038">
+    </testcase>
+    <testcase classname="pager render" name="pager render" time="0.144">
+    </testcase>
+    <testcase classname="pager pager&apos;s over limit options" name="pager pager&apos;s over limit options" time="0.055">
     </testcase>
   </testsuite>
 </testsuites>

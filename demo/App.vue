@@ -1,5 +1,14 @@
 <template>
   <div>
+    <h2>空数据</h2>
+    <CTable :columns="columns" :list="[]">
+      <span slot="nameSlot">nameSlot</span>
+      <span slot="name" slot-scope="{ value }">Name is {{ value }}</span>
+    </CTable>
+    <h2>空数据插槽</h2>
+    <CTable :columns="columns" :list="[]">
+      <span slot="emptyData">这里没有数据</span>
+    </CTable>
     <h2>加载数据</h2>
     <CTable :columns="columns" :list="list.slice(0, 10)">
       <span slot="nameSlot">nameSlot</span>
@@ -20,8 +29,8 @@
 
 <script lang="ts">
 import { CTable } from '../src/table'
-import { defineComponent, onMounted, reactive, watch, ref } from '@vue/composition-api'
-import { Column, SortDirection } from '../src/table/types';
+import { defineComponent, onMounted, reactive, ref } from '@vue/composition-api'
+import { Column } from '../src/table/types';
 
 const data = Array.from({ length: 1000 }).map((_, idx) => ({
   name: `user${idx}`,

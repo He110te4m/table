@@ -3,6 +3,7 @@ import { pagerProps } from '../types';
 
 /** 渲染列表项 */
 function renderPage(pageList: number[], curPage: number, jumpFn: (page: number) => void) {
+  /** 根据页码列表生成对应的页码块 */
   return pageList.map(page => {
     const isCurPage = page === curPage;
     const cls = ['c-pager__item', isCurPage ? 'c-pager__item--current' : ''].join(' ');
