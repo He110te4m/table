@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="14" failures="0" errors="0" time="6.779">
-  <testsuite name="Table" errors="0" failures="0" skipped="0" timestamp="2021-11-04T06:46:26" time="3.017" tests="14">
-    <testcase classname="Table render" name="Table render" time="0.063">
+<testsuites name="jest tests" tests="14" failures="0" errors="0" time="3.474">
+  <testsuite name="Table" errors="0" failures="0" skipped="0" timestamp="2021-11-04T08:49:09" time="1.682" tests="14">
+    <testcase classname="Table render" name="Table render" time="0.038">
     </testcase>
-    <testcase classname="Table loadData" name="Table loadData" time="0.058">
+    <testcase classname="Table loadData" name="Table loadData" time="0.023">
     </testcase>
-    <testcase classname="Table emptyData" name="Table emptyData" time="0.053">
+    <testcase classname="Table emptyData" name="Table emptyData" time="0.016">
     </testcase>
-    <testcase classname="Table data missing" name="Table data missing" time="0.032">
+    <testcase classname="Table data missing" name="Table data missing" time="0.013">
     </testcase>
-    <testcase classname="slot title slot" name="slot title slot" time="0.091">
+    <testcase classname="slot title slot" name="slot title slot" time="0.032">
     </testcase>
-    <testcase classname="slot cell slot" name="slot cell slot" time="0.019">
+    <testcase classname="slot cell slot" name="slot cell slot" time="0.012">
     </testcase>
-    <testcase classname="slot custom cell slot name" name="slot custom cell slot name" time="0.021">
+    <testcase classname="slot custom cell slot name" name="slot custom cell slot name" time="0.01">
     </testcase>
-    <testcase classname="sort sort" name="sort sort" time="0.134">
+    <testcase classname="sort sort" name="sort sort" time="0.048">
     </testcase>
-    <testcase classname="sort default sort" name="sort default sort" time="0.079">
+    <testcase classname="sort default sort" name="sort default sort" time="0.026">
     </testcase>
-    <testcase classname="sort sort not sortable column" name="sort sort not sortable column" time="0.035">
+    <testcase classname="sort sort not sortable column" name="sort sort not sortable column" time="0.013">
     </testcase>
-    <testcase classname="hooks hooks: data store" name="hooks hooks: data store" time="0.06">
+    <testcase classname="hooks hooks: data store" name="hooks hooks: data store" time="0.025">
     </testcase>
-    <testcase classname="hooks hooks: sortable" name="hooks hooks: sortable" time="0.043">
+    <testcase classname="hooks hooks: sortable" name="hooks hooks: sortable" time="0.02">
     </testcase>
-    <testcase classname="pager render" name="pager render" time="0.2">
+    <testcase classname="pager render" name="pager render" time="0.095">
     </testcase>
-    <testcase classname="pager pager&apos;s over limit options" name="pager pager&apos;s over limit options" time="0.067">
+    <testcase classname="pager pager&apos;s over limit options" name="pager pager&apos;s over limit options" time="0.034">
     </testcase>
   </testsuite>
 </testsuites>

@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for table/components/Pager.tsx</title>
+    <title>Code coverage report for table/composables/useDataStore.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">table/components</a> Pager.tsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">table/composables</a> useDataStore.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>27/27</span>
+                <span class='fraction'>45/45</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">93.1% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>18/18</span>
+                <span class='fraction'>27/29</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>13/13</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>22/22</span>
+                <span class='fraction'>45/45</span>
             </div>
         
             
@@ -161,18 +161,160 @@
 <a name='L102'></a><a href='#L102'>102</a>
 <a name='L103'></a><a href='#L103'>103</a>
 <a name='L104'></a><a href='#L104'>104</a>
-<a name='L105'></a><a href='#L105'>105</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">27x</span>
-<span class="cline-any cline-yes">27x</span>
-<span class="cline-any cline-yes">27x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">58x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">35x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -180,195 +322,206 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">27x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">51x</span>
+<span class="cline-any cline-yes">31x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { computed, defineComponent, ref, toRefs } from '@vue/composition-api';
-import { pagerProps } from '../types';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {
+  Column,
+  PagerPublicProps,
+  SortDirection,
+  TableDataType,
+} from '../types';
 &nbsp;
-/** 渲染列表项 */
-function renderPage(pageList: number[], curPage: number, jumpFn: (page: number) =&gt; void) {
-  /** 根据页码列表生成对应的页码块 */
-  return pageList.map(page =&gt; {
-    const isCurPage = page === curPage;
-    const cls = ['c-pager__item', isCurPage ? 'c-pager__item--current' : ''].join(' ');
-    return (
-      &lt;dd class={cls}&gt;
-        {
-          isCurPage
-            ? &lt;span class="c-pager__item__no"&gt;{page}&lt;/span&gt;
-            : &lt;a class="c-pager__item__no" onClick={() =&gt; jumpFn(page)}&gt;{page}&lt;/a&gt;
-        }
-      &lt;/dd&gt;
-    );
-  });
+import {
+  computed,
+  getCurrentInstance,
+  ref,
+  Ref,
+  watch,
+  watchEffect,
+} from '@vue/composition-api';
+import { error } from '../common/utils';
+import { sortData } from './useSortable';
+&nbsp;
+interface DataStoreContext {
+  sortColumn: Ref&lt;Column | null&gt;;
+  data: Ref&lt;TableDataType[]&gt;;
+  pagerOptions: Ref&lt;Required&lt;PagerPublicProps&gt; &amp; { hidePager: boolean }&gt;;
 }
 &nbsp;
-export const CPager = defineComponent({
-  name: 'CPager',
-  props: pagerProps,
-  emits: [
-    'jump'
-  ],
-  setup(props, { emit }) {
-    const { total, limit, page, maxShowPage } = toRefs(props);
+/** 分页数据管理 */
+export function useDataStore({
+  sortColumn,
+  pagerOptions,
+  data,
+}: DataStoreContext) {
+  /** 保存表格数据 */
+  let storeData = ref&lt;TableDataType[]&gt;(data.value);
 &nbsp;
-    /** 获取总页数 */
-    const pageCount = computed(() =&gt; Math.ceil(total.value / limit.value));
+  /** 计算排序后的表格数据 */
+  const currentData = computed(() =&gt;
+    sortColumn.value?.sortDirection === SortDirection.none
+      ? storeData.value
+      : sortData(storeData.value, sortColumn)
+  );
+&nbsp;
+  /** 每页显示多少条记录 */
+  let storeLimit = ref(pagerOptions.value.limit || <span class="branch-1 cbranch-no" title="branch not covered" >20)</span>;
+&nbsp;
+  /** 总共有多少记录 */
+  const storeTotal = computed(
+    () =&gt; pagerOptions.value.total || storeData.value.length
+  );
+&nbsp;
+  /** 总页数 */
+  const totalPage = computed(() =&gt;
+    Math.ceil(storeTotal.value / storeLimit.value)
+  );
+&nbsp;
+  /** 检查数字是否为正整数 */
+  const checkNumber = (num: number): num is number =&gt; {
+    if (num &lt;= 0 || String(num).includes('.')) {
+      error(
+        `${num} is invalid! `,
+        'Please modify the num value to be a positive integer'
+      );
+      return false;
+    }
+    return true;
+  };
+&nbsp;
+  /** 检查页码，必须为正整数，并且小于总页数 */
+  const checkPage = (page: number): page is number =&gt; {
+    if (!checkNumber(page)) {
+      return false;
+    }
+&nbsp;
+    if (totalPage.value &amp;&amp; page &gt; totalPage.value) {
+      error(
+        'The page number exceeds the maximum number of pages.',
+        'Please check the page number'
+      );
+      return false;
+    }
+&nbsp;
+    return true;
+  };
+&nbsp;
+  /** 当前页码 */
+  let storePage = ref(
+    checkPage(pagerOptions.value.page) ? pagerOptions.value.page : <span class="branch-1 cbranch-no" title="branch not covered" >1</span>
+  );
+&nbsp;
+  /** vue 实例，用于 emit */
+  const vm = getCurrentInstance();
+&nbsp;
+  /** 动态更新 limit */
+  watchEffect(() =&gt; {
+    if (pagerOptions.value.limit &amp;&amp; checkNumber(pagerOptions.value.limit)) {
+      storeLimit.value = pagerOptions.value.limit;
+    }
+  });
+&nbsp;
+  /** 动态更新 data */
+  watch(data, () =&gt; {
+    storeData.value = data.value;
+  });
+&nbsp;
+  return {
+    /** 更新表格数据 */
+    setData: (data: TableDataType[]) =&gt; {
+      storeData.value = data;
+    },
+&nbsp;
+    /** 更新表格每页显示的数量 */
+    getLimit: () =&gt; {
+      return storeLimit.value;
+    },
+&nbsp;
+    /** 获取表格总页数 */
+    getTotal: () =&gt; {
+      return storeTotal.value;
+    },
 &nbsp;
     /** 获取当前页码 */
-    const curPage = ref((page.value &gt; 0 &amp;&amp; page.value &lt;= pageCount.value) ? Math.floor(page.value) : 1);
+    getCurrentPage: () =&gt; {
+      return storePage.value;
+    },
 &nbsp;
-    /** 同时显示最多能显示多少项，会自动处理为奇数 */
-    const maxPage = computed(() =&gt; maxShowPage.value % 2 === 1 ? maxShowPage.value : maxShowPage.value + 1);
+    /** 获取表格全部数据 */
+    getAllData: () =&gt; {
+      return currentData.value;
+    },
 &nbsp;
-    /** 页码显示时从哪一页开始显示 */
-    const pageStart = computed(() =&gt; Math.max(
-      // 最小不能小于 1
-      1,
-      Math.min(
-        // 最大不能超过最后一页，+1 是为了显示自身
-        pageCount.value - maxPage.value + 1,
-        // 正常情况以当前页码为中位数，向两端取值
-        curPage.value - Math.floor(maxPage.value / 2),
-      )
-    ));
-&nbsp;
-    /** 生成需要渲染的页码列表，便于后面去循环 */
-    const pageList = computed(() =&gt; Array.from({ length: Math.min(pageCount.value, maxPage.value) }, (_, idx) =&gt; idx + pageStart.value));
-&nbsp;
-    /** 页码跳转函数 */
-    const changePage = (page: number) =&gt; {
-      curPage.value = page;
-      emit('jump', page);
-    };
-&nbsp;
-    return {
-      // data
-      curPage,
-&nbsp;
-      // computed
-      pageCount,
-      pageList,
-&nbsp;
-      // methods
-      changePage,
-      goFirstPage: () =&gt; {
-        emit('go-first-page');
-        changePage(1);
-      },
-      goLastPage: () =&gt; {
-        emit('go-last-page');
-        changePage(pageCount.value);
+    /** 数据翻页 */
+    jump: (page: number) =&gt; {
+      if (!checkPage(page)) {
+        return;
       }
-    };
-  },
-  render() {
-    const hasPage = !!this.pageList.length;
+      const oldPage = storePage.value;
+      storePage.value = page;
+      vm?.emit('jump', page, oldPage);
+    },
 &nbsp;
-    return (
-      &lt;dl class="c-pager"&gt;
-        {
-          hasPage &amp;&amp; this.curPage !== 1
-            ? &lt;dd class="c-pager__item c-pager__go-first" onClick={this.goFirstPage}&gt;
-              &lt;a class="c-pager__item__no"&gt;{'&lt;&lt;'}&lt;/a&gt;
-            &lt;/dd&gt;
-            : ''
-        }
-        {renderPage(this.pageList, this.curPage, this.changePage)}
-        {
-          hasPage &amp;&amp; this.curPage &lt; this.pageCount
-            ? &lt;dd class="c-pager__item c-pager__go-end" onClick={this.goLastPage}&gt;
-              &lt;a class="c-pager__item__no"&gt;{'&gt;&gt;'}&lt;/a&gt;
-            &lt;/dd&gt;
-            : ''
-        }
-      &lt;/dl&gt;
-    );
-  }
-});
+    /** 获取指定页码的数据，默认获取当前页数据 */
+    getData: (page = storePage.value) =&gt; {
+      if (pagerOptions.value.hidePager) {
+        return currentData.value;
+      }
+&nbsp;
+      if (!checkPage(page)) {
+        return [];
+      }
+&nbsp;
+      const start = (page - 1) * storeLimit.value;
+      const end = start + storeLimit.value;
+&nbsp;
+      return currentData.value.slice(start, end);
+    },
+  };
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

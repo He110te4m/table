@@ -26,8 +26,10 @@ const list = Array.from({ length: dataLength }).map((_, idx) => ({
   age: Math.ceil(Math.random() * 100)
 }));
 
-const TableMount = (options?: ThisTypedMountOptions<Vue>) =>
-  mount(CTable, { ...options, propsData: { columns } });
+const TableMount = (options?: ThisTypedMountOptions<Vue>) => {
+  const { propsData = {}, ...rest } = options || {};
+  return mount(CTable, { propsData: { columns, ...propsData }, ...rest });
+};
 
 describe('Table', () => {
   test('render', () => {
@@ -337,14 +339,7 @@ describe('hooks', () => {
 
 describe('pager', () => {
   test('render', async () => {
-    const wrapper = TableMount({
-      propsData: {
-        list,
-        pagerOptions: {
-          limit: dataLimit
-        }
-      }
-    });
+    const wrapper = TableMount();
     let allPageItem = wrapper.findAll('.c-pager__item__no');
     expect(allPageItem.wrappers).toHaveLength(0);
 
