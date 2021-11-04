@@ -4,10 +4,7 @@ import type { SetupContext } from '@vue/composition-api';
 
 export type Slots = SetupContext['slots'];
 
-type CSSLength =
-  | number
-  | 'auto'
-  | `${number}${'%' | 'px' | 'em' | 'rem' | 'vw' | 'vh'}`;
+type CSSLength = number | string;
 
 export enum SortDirection {
   /** 从小到大排序 */
@@ -15,8 +12,8 @@ export enum SortDirection {
   /** 从大到小排序 */
   desc = 'DESC',
   /** 不参与排序 */
-  none = 'NONE'
-};
+  none = 'NONE',
+}
 
 export type Column = {
   /** 显示的标题文本 */
@@ -42,13 +39,15 @@ export function pick<TData extends TableDataType, TKey extends keyof TData>(
   data: TData,
   keys: TKey[]
 ): Pick<TData, TKey> {
-    return ((Object.keys(data) as (keyof TData)[])
-        .filter(key => (keys as (keyof TData)[]).includes(key)) as TKey[])
-        .reduce((obj, key) => {
-            obj[key] = data[key];
-            return obj;
-        }, {} as Pick<TData, TKey>);
-};
+  return (
+    (Object.keys(data) as (keyof TData)[]).filter((key) =>
+      (keys as (keyof TData)[]).includes(key)
+    ) as TKey[]
+  ).reduce((obj, key) => {
+    obj[key] = data[key];
+    return obj;
+  }, {} as Pick<TData, TKey>);
+}
 
 /** 表格的 prop */
 export const tableProps = {
