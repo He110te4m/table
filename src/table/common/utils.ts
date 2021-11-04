@@ -15,15 +15,13 @@ export function log(...args: unknown[]) {
 
 /** 错误日志 */
 export function error(...args: unknown[]) {
-  import.meta.env.DEV &&
-    import.meta.env.MODE !== 'test' &&
+  import.meta.env.MODE !== 'test' &&
     window.console.error(getLogHeader(), ...args);
 }
 
 /** 堆栈追踪日志 */
 export function trace(...args: unknown[]) {
-  import.meta.env.DEV &&
-    import.meta.env.MODE !== 'test' &&
+  import.meta.env.MODE !== 'test' &&
     window.console.trace(getLogHeader(), ...args);
 }
 

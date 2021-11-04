@@ -5,14 +5,16 @@
 import { computed, defineComponent, provide, ref, watchEffect } from '@vue/composition-api';
 import { TableDataType, tableProps } from './types';
 import { TABLE_TOKEN } from './common/const';
+
 import { CTableHeader } from './components/Header';
 import { CTableBody } from './components/Body';
 import { CPager } from './components/Pager';
 
+import { useProps } from './composables/useProps';
+import { useSortable } from './composables/useSortable';
+import { useDataStore } from './composables/useDataStore';
+
 import './common/table.less';
-import { useProps } from './hooks/useProps';
-import { useSortable } from './hooks/useSortable';
-import { useDataStore } from './hooks/useDataStore';
 
 export default defineComponent({
   name: 'CTable',
