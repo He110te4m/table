@@ -22,9 +22,20 @@ const dataLength = 100;
 const dataLimit = 25;
 const expectPage = Math.ceil(dataLength / dataLimit);
 const list = Array.from({ length: dataLength }).map((_, idx) => ({
-  name: `test ${idx}`,
-  age: Math.ceil(Math.random() * 100)
+  name: `test ${(idx % 2 - 1) * idx}`,
+  age: idx
 }));
+
+const shortList = [
+  {
+    name: '张三',
+    age: 14,
+  },
+  {
+    name: '李四',
+    age: 16,
+  },
+];
 
 const TableMount = (options?: ThisTypedMountOptions<Vue>) => {
   const { propsData = {}, ...rest } = options || {};
@@ -44,16 +55,7 @@ describe('Table', () => {
   test('loadData', async () => {
     const wrapper = TableMount();
     await wrapper.setProps({
-      list: [
-        {
-          name: '张三',
-          age: 14,
-        },
-        {
-          name: '李四',
-          age: 16,
-        },
-      ],
+      list: shortList,
     });
     expect(wrapper.html()).toMatchSnapshot();
     await wrapper.setProps({
@@ -114,16 +116,7 @@ describe('slot', () => {
       },
     });
     await wrapper.setProps({
-      list: [
-        {
-          name: '张三',
-          age: 14,
-        },
-        {
-          name: '李四',
-          age: 16,
-        },
-      ],
+      list: shortList,
     });
     expect(wrapper.html()).toMatchSnapshot();
 
@@ -142,16 +135,7 @@ describe('slot', () => {
       },
     });
     await wrapper.setProps({
-      list: [
-        {
-          name: '张三',
-          age: 14,
-        },
-        {
-          name: '李四',
-          age: 16,
-        },
-      ],
+      list: shortList,
     });
     expect(wrapper.html()).toMatchSnapshot();
   });
@@ -163,16 +147,7 @@ describe('slot', () => {
       },
     });
     await wrapper.setProps({
-      list: [
-        {
-          name: '张三',
-          age: 14,
-        },
-        {
-          name: '李四',
-          age: 16,
-        },
-      ],
+      list: shortList,
     });
     expect(wrapper.html()).toMatchSnapshot();
   });
@@ -182,16 +157,7 @@ describe('sort', () => {
   test('sort', async () => {
     const wrapper = TableMount();
     await wrapper.setProps({
-      list: [
-        {
-          name: '张三',
-          age: 14,
-        },
-        {
-          name: '李四',
-          age: 16,
-        },
-      ],
+      list,
     });
     expect(wrapper.html()).toMatchSnapshot();
 
@@ -201,16 +167,22 @@ describe('sort', () => {
     expect(nameHeader).toBeTruthy();
 
     await nameHeader.trigger('click');
+    await wrapper.vm.$nextTick();
     expect(nameHeader.html()).toContain('table-sort-arrow');
     expect(nameHeader.html()).toMatchSnapshot();
+    expect((wrapper.vm as unknown as { dataList: typeof list; }).dataList).not.toEqual(list);
 
     await nameHeader.trigger('click');
+    await wrapper.vm.$nextTick();
     expect(nameHeader.html()).toContain('table-sort-arrow');
     expect(nameHeader.html()).toMatchSnapshot();
+    expect((wrapper.vm as unknown as { dataList: typeof list; }).dataList).not.toEqual(list);
 
     await nameHeader.trigger('click');
+    await wrapper.vm.$nextTick();
     expect(nameHeader.html()).not.toContain('table-sort-arrow');
     expect(nameHeader.html()).toMatchSnapshot();
+    expect((wrapper.vm as unknown as { dataList: typeof list; }).dataList).toEqual(list);
 
     await nameHeader.trigger('click');
     expect(nameHeader.html()).toContain('table-sort-arrow');
@@ -220,16 +192,7 @@ describe('sort', () => {
   test('default sort', async () => {
     const wrapper = TableMount();
     await wrapper.setProps({
-      list: [
-        {
-          name: '张三',
-          age: 14,
-        },
-        {
-          name: '李四',
-          age: 16,
-        },
-      ],
+      list: shortList,
       columns: [
         {
           title: 'name',
@@ -268,16 +231,7 @@ describe('sort', () => {
   test('sort not sortable column', async () => {
     const wrapper = TableMount();
     await wrapper.setProps({
-      list: [
-        {
-          name: '张三',
-          age: 14,
-        },
-        {
-          name: '李四',
-          age: 16,
-        },
-      ],
+      list: shortList,
     });
     expect(wrapper.html()).toMatchSnapshot();
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="161" lines-covered="160" line-rate="0.9937" branches-valid="102" branches-covered="96" branch-rate="0.9411" timestamp="1636015751223" complexity="0" version="0.1">
+<coverage lines-valid="161" lines-covered="160" line-rate="0.9937" branches-valid="102" branches-covered="96" branch-rate="0.9411" timestamp="1636016592102" complexity="0" version="0.1">
   <sources>
     <source>/mnt/d/wwwroot/table</source>
   </sources>
@@ -110,9 +110,9 @@
       <classes>
         <class name="Body.tsx" filename="src/table/components/Body.tsx" line-rate="1" branch-rate="0.8">
           <methods>
-            <method name="getRowHTML" hits="406" signature="()V">
+            <method name="getRowHTML" hits="1190" signature="()V">
               <lines>
-                <line number="6" hits="406"/>
+                <line number="6" hits="1190"/>
               </lines>
             </method>
             <method name="(anonymous_1)" hits="12" signature="()V">
@@ -125,28 +125,28 @@
                 <line number="39" hits="23"/>
               </lines>
             </method>
-            <method name="(anonymous_3)" hits="203" signature="()V">
+            <method name="(anonymous_3)" hits="595" signature="()V">
               <lines>
-                <line number="42" hits="203"/>
+                <line number="42" hits="595"/>
               </lines>
             </method>
-            <method name="(anonymous_4)" hits="406" signature="()V">
+            <method name="(anonymous_4)" hits="1190" signature="()V">
               <lines>
-                <line number="44" hits="406"/>
+                <line number="44" hits="1190"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="8" hits="406" branch="true" condition-coverage="100% (2/2)"/>
-            <line number="10" hits="406" branch="false"/>
-            <line number="17" hits="406" branch="true" condition-coverage="100% (2/2)"/>
-            <line number="20" hits="406" branch="false"/>
+            <line number="8" hits="1190" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="10" hits="1190" branch="false"/>
+            <line number="17" hits="1190" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="20" hits="1190" branch="false"/>
             <line number="23" hits="1" branch="false"/>
             <line number="33" hits="12" branch="true" condition-coverage="0% (0/1)"/>
             <line number="35" hits="12" branch="false"/>
             <line number="40" hits="23" branch="false"/>
-            <line number="43" hits="203" branch="false"/>
-            <line number="44" hits="406" branch="false"/>
+            <line number="43" hits="595" branch="false"/>
+            <line number="44" hits="1190" branch="false"/>
           </lines>
         </class>
         <class name="Header.tsx" filename="src/table/components/Header.tsx" line-rate="1" branch-rate="1">
@@ -502,9 +502,9 @@
                 <line number="64" hits="34"/>
               </lines>
             </method>
-            <method name="(anonymous_7)" hits="5" signature="()V">
+            <method name="(anonymous_7)" hits="1339" signature="()V">
               <lines>
-                <line number="84" hits="5"/>
+                <line number="84" hits="1339"/>
               </lines>
             </method>
             <method name="getNextSortStatus" hits="7" signature="()V">
@@ -539,7 +539,7 @@
             <line number="77" hits="5" branch="false"/>
             <line number="79" hits="5" branch="true" condition-coverage="100% (2/2)"/>
             <line number="81" hits="5" branch="false"/>
-            <line number="85" hits="5" branch="false"/>
+            <line number="85" hits="1339" branch="false"/>
             <line number="94" hits="7" branch="false"/>
             <line number="95" hits="7" branch="true" condition-coverage="100% (3/3)"/>
             <line number="97" hits="3" branch="false"/>

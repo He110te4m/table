@@ -104,103 +104,103 @@ exports[`pager pager's over limit options 1`] = `
     <tbody class=\\"c-table-body\\">
       <tr class=\\"c-table-body__row\\">
         <td class=\\"c-table-body__row__cell\\">test 0</td>
-        <td class=\\"c-table-body__row__cell\\">67</td>
+        <td class=\\"c-table-body__row__cell\\">0</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 1</td>
-        <td class=\\"c-table-body__row__cell\\">96</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 2</td>
-        <td class=\\"c-table-body__row__cell\\">89</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 3</td>
-        <td class=\\"c-table-body__row__cell\\">92</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 4</td>
-        <td class=\\"c-table-body__row__cell\\">59</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 5</td>
-        <td class=\\"c-table-body__row__cell\\">80</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 6</td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 7</td>
-        <td class=\\"c-table-body__row__cell\\">9</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 8</td>
-        <td class=\\"c-table-body__row__cell\\">3</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 9</td>
-        <td class=\\"c-table-body__row__cell\\">87</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 10</td>
-        <td class=\\"c-table-body__row__cell\\">34</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 11</td>
-        <td class=\\"c-table-body__row__cell\\">65</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 12</td>
-        <td class=\\"c-table-body__row__cell\\">32</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 13</td>
-        <td class=\\"c-table-body__row__cell\\">47</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 14</td>
-        <td class=\\"c-table-body__row__cell\\">17</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 15</td>
-        <td class=\\"c-table-body__row__cell\\">98</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 16</td>
-        <td class=\\"c-table-body__row__cell\\">17</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 17</td>
-        <td class=\\"c-table-body__row__cell\\">47</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 18</td>
-        <td class=\\"c-table-body__row__cell\\">68</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 19</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
         <td class=\\"c-table-body__row__cell\\">1</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 20</td>
+        <td class=\\"c-table-body__row__cell\\">test -2</td>
+        <td class=\\"c-table-body__row__cell\\">2</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">3</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -4</td>
+        <td class=\\"c-table-body__row__cell\\">4</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">5</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -6</td>
+        <td class=\\"c-table-body__row__cell\\">6</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">7</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -8</td>
+        <td class=\\"c-table-body__row__cell\\">8</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">9</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -10</td>
+        <td class=\\"c-table-body__row__cell\\">10</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">11</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -12</td>
+        <td class=\\"c-table-body__row__cell\\">12</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">13</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -14</td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">15</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -16</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">17</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -18</td>
+        <td class=\\"c-table-body__row__cell\\">18</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">19</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -20</td>
+        <td class=\\"c-table-body__row__cell\\">20</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">21</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -22</td>
+        <td class=\\"c-table-body__row__cell\\">22</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">23</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -24</td>
         <td class=\\"c-table-body__row__cell\\">24</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 21</td>
-        <td class=\\"c-table-body__row__cell\\">43</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 22</td>
-        <td class=\\"c-table-body__row__cell\\">78</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 23</td>
-        <td class=\\"c-table-body__row__cell\\">97</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 24</td>
-        <td class=\\"c-table-body__row__cell\\">27</td>
       </tr>
     </tbody>
   </table>
@@ -224,103 +224,103 @@ exports[`pager render 1`] = `
     <tbody class=\\"c-table-body\\">
       <tr class=\\"c-table-body__row\\">
         <td class=\\"c-table-body__row__cell\\">test 0</td>
-        <td class=\\"c-table-body__row__cell\\">67</td>
+        <td class=\\"c-table-body__row__cell\\">0</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 1</td>
-        <td class=\\"c-table-body__row__cell\\">96</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 2</td>
-        <td class=\\"c-table-body__row__cell\\">89</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 3</td>
-        <td class=\\"c-table-body__row__cell\\">92</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 4</td>
-        <td class=\\"c-table-body__row__cell\\">59</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 5</td>
-        <td class=\\"c-table-body__row__cell\\">80</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 6</td>
-        <td class=\\"c-table-body__row__cell\\">14</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 7</td>
-        <td class=\\"c-table-body__row__cell\\">9</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 8</td>
-        <td class=\\"c-table-body__row__cell\\">3</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 9</td>
-        <td class=\\"c-table-body__row__cell\\">87</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 10</td>
-        <td class=\\"c-table-body__row__cell\\">34</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 11</td>
-        <td class=\\"c-table-body__row__cell\\">65</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 12</td>
-        <td class=\\"c-table-body__row__cell\\">32</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 13</td>
-        <td class=\\"c-table-body__row__cell\\">47</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 14</td>
-        <td class=\\"c-table-body__row__cell\\">17</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 15</td>
-        <td class=\\"c-table-body__row__cell\\">98</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 16</td>
-        <td class=\\"c-table-body__row__cell\\">17</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 17</td>
-        <td class=\\"c-table-body__row__cell\\">47</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 18</td>
-        <td class=\\"c-table-body__row__cell\\">68</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 19</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
         <td class=\\"c-table-body__row__cell\\">1</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 20</td>
+        <td class=\\"c-table-body__row__cell\\">test -2</td>
+        <td class=\\"c-table-body__row__cell\\">2</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">3</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -4</td>
+        <td class=\\"c-table-body__row__cell\\">4</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">5</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -6</td>
+        <td class=\\"c-table-body__row__cell\\">6</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">7</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -8</td>
+        <td class=\\"c-table-body__row__cell\\">8</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">9</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -10</td>
+        <td class=\\"c-table-body__row__cell\\">10</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">11</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -12</td>
+        <td class=\\"c-table-body__row__cell\\">12</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">13</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -14</td>
+        <td class=\\"c-table-body__row__cell\\">14</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">15</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -16</td>
+        <td class=\\"c-table-body__row__cell\\">16</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">17</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -18</td>
+        <td class=\\"c-table-body__row__cell\\">18</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">19</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -20</td>
+        <td class=\\"c-table-body__row__cell\\">20</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">21</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -22</td>
+        <td class=\\"c-table-body__row__cell\\">22</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">23</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -24</td>
         <td class=\\"c-table-body__row__cell\\">24</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 21</td>
-        <td class=\\"c-table-body__row__cell\\">43</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 22</td>
-        <td class=\\"c-table-body__row__cell\\">78</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 23</td>
-        <td class=\\"c-table-body__row__cell\\">97</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 24</td>
-        <td class=\\"c-table-body__row__cell\\">27</td>
       </tr>
     </tbody>
   </table>
@@ -343,104 +343,104 @@ exports[`pager render 2`] = `
     </tr>
     <tbody class=\\"c-table-body\\">
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 25</td>
-        <td class=\\"c-table-body__row__cell\\">13</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 26</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
         <td class=\\"c-table-body__row__cell\\">25</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 27</td>
-        <td class=\\"c-table-body__row__cell\\">75</td>
+        <td class=\\"c-table-body__row__cell\\">test -26</td>
+        <td class=\\"c-table-body__row__cell\\">26</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 28</td>
-        <td class=\\"c-table-body__row__cell\\">81</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">27</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 29</td>
-        <td class=\\"c-table-body__row__cell\\">72</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 30</td>
-        <td class=\\"c-table-body__row__cell\\">62</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 31</td>
+        <td class=\\"c-table-body__row__cell\\">test -28</td>
         <td class=\\"c-table-body__row__cell\\">28</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 32</td>
-        <td class=\\"c-table-body__row__cell\\">69</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">29</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 33</td>
-        <td class=\\"c-table-body__row__cell\\">72</td>
+        <td class=\\"c-table-body__row__cell\\">test -30</td>
+        <td class=\\"c-table-body__row__cell\\">30</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 34</td>
-        <td class=\\"c-table-body__row__cell\\">12</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 35</td>
-        <td class=\\"c-table-body__row__cell\\">44</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 36</td>
-        <td class=\\"c-table-body__row__cell\\">48</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 37</td>
-        <td class=\\"c-table-body__row__cell\\">54</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 38</td>
-        <td class=\\"c-table-body__row__cell\\">10</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 39</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
         <td class=\\"c-table-body__row__cell\\">31</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 40</td>
-        <td class=\\"c-table-body__row__cell\\">93</td>
+        <td class=\\"c-table-body__row__cell\\">test -32</td>
+        <td class=\\"c-table-body__row__cell\\">32</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 41</td>
-        <td class=\\"c-table-body__row__cell\\">77</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">33</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 42</td>
-        <td class=\\"c-table-body__row__cell\\">82</td>
+        <td class=\\"c-table-body__row__cell\\">test -34</td>
+        <td class=\\"c-table-body__row__cell\\">34</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 43</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">35</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -36</td>
+        <td class=\\"c-table-body__row__cell\\">36</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">37</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -38</td>
+        <td class=\\"c-table-body__row__cell\\">38</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">39</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -40</td>
+        <td class=\\"c-table-body__row__cell\\">40</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
         <td class=\\"c-table-body__row__cell\\">41</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 44</td>
+        <td class=\\"c-table-body__row__cell\\">test -42</td>
+        <td class=\\"c-table-body__row__cell\\">42</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">43</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -44</td>
         <td class=\\"c-table-body__row__cell\\">44</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 45</td>
-        <td class=\\"c-table-body__row__cell\\">56</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">45</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 46</td>
-        <td class=\\"c-table-body__row__cell\\">58</td>
+        <td class=\\"c-table-body__row__cell\\">test -46</td>
+        <td class=\\"c-table-body__row__cell\\">46</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 47</td>
-        <td class=\\"c-table-body__row__cell\\">11</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">47</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 48</td>
-        <td class=\\"c-table-body__row__cell\\">4</td>
+        <td class=\\"c-table-body__row__cell\\">test -48</td>
+        <td class=\\"c-table-body__row__cell\\">48</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 49</td>
-        <td class=\\"c-table-body__row__cell\\">19</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">49</td>
       </tr>
     </tbody>
   </table>
@@ -464,104 +464,104 @@ exports[`pager render 3`] = `
     </tr>
     <tbody class=\\"c-table-body\\">
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 25</td>
-        <td class=\\"c-table-body__row__cell\\">13</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 26</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
         <td class=\\"c-table-body__row__cell\\">25</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 27</td>
-        <td class=\\"c-table-body__row__cell\\">75</td>
+        <td class=\\"c-table-body__row__cell\\">test -26</td>
+        <td class=\\"c-table-body__row__cell\\">26</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 28</td>
-        <td class=\\"c-table-body__row__cell\\">81</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">27</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 29</td>
-        <td class=\\"c-table-body__row__cell\\">72</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 30</td>
-        <td class=\\"c-table-body__row__cell\\">62</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 31</td>
+        <td class=\\"c-table-body__row__cell\\">test -28</td>
         <td class=\\"c-table-body__row__cell\\">28</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 32</td>
-        <td class=\\"c-table-body__row__cell\\">69</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">29</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 33</td>
-        <td class=\\"c-table-body__row__cell\\">72</td>
+        <td class=\\"c-table-body__row__cell\\">test -30</td>
+        <td class=\\"c-table-body__row__cell\\">30</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 34</td>
-        <td class=\\"c-table-body__row__cell\\">12</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 35</td>
-        <td class=\\"c-table-body__row__cell\\">44</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 36</td>
-        <td class=\\"c-table-body__row__cell\\">48</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 37</td>
-        <td class=\\"c-table-body__row__cell\\">54</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 38</td>
-        <td class=\\"c-table-body__row__cell\\">10</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 39</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
         <td class=\\"c-table-body__row__cell\\">31</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 40</td>
-        <td class=\\"c-table-body__row__cell\\">93</td>
+        <td class=\\"c-table-body__row__cell\\">test -32</td>
+        <td class=\\"c-table-body__row__cell\\">32</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 41</td>
-        <td class=\\"c-table-body__row__cell\\">77</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">33</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 42</td>
-        <td class=\\"c-table-body__row__cell\\">82</td>
+        <td class=\\"c-table-body__row__cell\\">test -34</td>
+        <td class=\\"c-table-body__row__cell\\">34</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 43</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">35</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -36</td>
+        <td class=\\"c-table-body__row__cell\\">36</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">37</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -38</td>
+        <td class=\\"c-table-body__row__cell\\">38</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">39</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -40</td>
+        <td class=\\"c-table-body__row__cell\\">40</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
         <td class=\\"c-table-body__row__cell\\">41</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 44</td>
+        <td class=\\"c-table-body__row__cell\\">test -42</td>
+        <td class=\\"c-table-body__row__cell\\">42</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">43</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -44</td>
         <td class=\\"c-table-body__row__cell\\">44</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 45</td>
-        <td class=\\"c-table-body__row__cell\\">56</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">45</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 46</td>
-        <td class=\\"c-table-body__row__cell\\">58</td>
+        <td class=\\"c-table-body__row__cell\\">test -46</td>
+        <td class=\\"c-table-body__row__cell\\">46</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 47</td>
-        <td class=\\"c-table-body__row__cell\\">11</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">47</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 48</td>
-        <td class=\\"c-table-body__row__cell\\">4</td>
+        <td class=\\"c-table-body__row__cell\\">test -48</td>
+        <td class=\\"c-table-body__row__cell\\">48</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 49</td>
-        <td class=\\"c-table-body__row__cell\\">19</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">49</td>
       </tr>
     </tbody>
   </table>
@@ -584,104 +584,104 @@ exports[`pager render 4`] = `
     </tr>
     <tbody class=\\"c-table-body\\">
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 75</td>
-        <td class=\\"c-table-body__row__cell\\">45</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 76</td>
-        <td class=\\"c-table-body__row__cell\\">17</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 77</td>
-        <td class=\\"c-table-body__row__cell\\">52</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 78</td>
-        <td class=\\"c-table-body__row__cell\\">70</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 79</td>
-        <td class=\\"c-table-body__row__cell\\">38</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 80</td>
-        <td class=\\"c-table-body__row__cell\\">39</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 81</td>
-        <td class=\\"c-table-body__row__cell\\">80</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 82</td>
-        <td class=\\"c-table-body__row__cell\\">10</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 83</td>
-        <td class=\\"c-table-body__row__cell\\">10</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 84</td>
-        <td class=\\"c-table-body__row__cell\\">84</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 85</td>
-        <td class=\\"c-table-body__row__cell\\">47</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 86</td>
-        <td class=\\"c-table-body__row__cell\\">70</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 87</td>
-        <td class=\\"c-table-body__row__cell\\">29</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 88</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
         <td class=\\"c-table-body__row__cell\\">75</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 89</td>
-        <td class=\\"c-table-body__row__cell\\">91</td>
+        <td class=\\"c-table-body__row__cell\\">test -76</td>
+        <td class=\\"c-table-body__row__cell\\">76</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 90</td>
-        <td class=\\"c-table-body__row__cell\\">55</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 91</td>
-        <td class=\\"c-table-body__row__cell\\">93</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 92</td>
-        <td class=\\"c-table-body__row__cell\\">74</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 93</td>
-        <td class=\\"c-table-body__row__cell\\">5</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 94</td>
-        <td class=\\"c-table-body__row__cell\\">7</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 95</td>
-        <td class=\\"c-table-body__row__cell\\">11</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 96</td>
-        <td class=\\"c-table-body__row__cell\\">71</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 97</td>
-        <td class=\\"c-table-body__row__cell\\">67</td>
-      </tr>
-      <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 98</td>
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
         <td class=\\"c-table-body__row__cell\\">77</td>
       </tr>
       <tr class=\\"c-table-body__row\\">
-        <td class=\\"c-table-body__row__cell\\">test 99</td>
-        <td class=\\"c-table-body__row__cell\\">52</td>
+        <td class=\\"c-table-body__row__cell\\">test -78</td>
+        <td class=\\"c-table-body__row__cell\\">78</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">79</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -80</td>
+        <td class=\\"c-table-body__row__cell\\">80</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">81</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -82</td>
+        <td class=\\"c-table-body__row__cell\\">82</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">83</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -84</td>
+        <td class=\\"c-table-body__row__cell\\">84</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">85</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -86</td>
+        <td class=\\"c-table-body__row__cell\\">86</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">87</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -88</td>
+        <td class=\\"c-table-body__row__cell\\">88</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">89</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -90</td>
+        <td class=\\"c-table-body__row__cell\\">90</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">91</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -92</td>
+        <td class=\\"c-table-body__row__cell\\">92</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">93</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -94</td>
+        <td class=\\"c-table-body__row__cell\\">94</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">95</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -96</td>
+        <td class=\\"c-table-body__row__cell\\">96</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">97</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test -98</td>
+        <td class=\\"c-table-body__row__cell\\">98</td>
+      </tr>
+      <tr class=\\"c-table-body__row\\">
+        <td class=\\"c-table-body__row__cell\\">test 0</td>
+        <td class=\\"c-table-body__row__cell\\">99</td>
       </tr>
     </tbody>
   </table>
