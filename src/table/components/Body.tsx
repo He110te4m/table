@@ -30,7 +30,7 @@ export const CTableBody = defineComponent({
     }
   },
   setup() {
-    const { slots } = inject(TABLE_TOKEN)!;
+    const { slots = {} } = inject(TABLE_TOKEN)!;
 
     return {
       slots,
